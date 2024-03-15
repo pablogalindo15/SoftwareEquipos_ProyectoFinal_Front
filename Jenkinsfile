@@ -23,7 +23,8 @@ pipeline {
                    sh '''
                       CYPRESS_INSTALL_BINARY=0 npm install
                       npm i -s
-                      npm i typescript@5.4.2
+                      npm i -g typescript@5.4.2
+                      export NODE_PATH="/usr/lib/node_modules"
                       ng build
                    '''
                 }
