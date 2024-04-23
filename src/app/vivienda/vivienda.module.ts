@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ViviendaListComponent } from './vivienda-list/vivienda-list.component';
 
 
-
 @NgModule({
   declarations: [
     ViviendaListComponent
