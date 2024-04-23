@@ -14,6 +14,7 @@ export class Vivienda {
     ocupada: boolean;
     coordX:number;
     coordY: number;
+    //faltan enumeraciones y propietario
     constructor(
         id:number,
         nombre: string,
