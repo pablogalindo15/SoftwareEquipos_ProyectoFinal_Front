@@ -5,6 +5,7 @@ import { LugarModule } from './lugar/lugar.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PropietarioModule } from './propietario/propietario.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PropietarioModule } from './propietario/propietario.module';
     AppRoutingModule,
     ViviendaModule,
     LugarModule,
-    PropietarioModule
+    PropietarioModule,
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration()
