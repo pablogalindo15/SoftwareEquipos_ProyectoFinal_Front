@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-import { ViviendaModule } from './vivienda/vivienda.module';
-import { LugarModule } from './lugar/lugar.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { ViviendaModule } from './vivienda/vivienda.module';
+import { LugarModule } from './lugar/lugar.module';
+import { PropietarioModule } from './propietario/propietario.module';
 
 @NgModule({
   declarations: [
@@ -12,8 +15,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ViviendaModule,
-    LugarModule
+    PropietarioModule
   ],
   providers: [
     provideClientHydration()

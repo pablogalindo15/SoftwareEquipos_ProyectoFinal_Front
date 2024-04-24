@@ -1,0 +1,15 @@
+<testExecutions version="1">
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should have as title 'mynewapp'" duration="57"/>
+    <testCase name="AppComponent should create the app" duration="4"/>
+  </file>
+  <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
+    <testCase name="LugarListComponent should create" duration="5"/>
+  </file>
+  <file path="src/app/vivienda/vivienda.service.spec.ts">
+    <testCase name="Service: Vivienda should ..." duration="3"/>
+  </file>
+  <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
+    <testCase name="ViviendaListComponent should create" duration="8"/>
+  </file>
+</testExecutions>
