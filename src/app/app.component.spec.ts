@@ -3,6 +3,8 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { ViviendaListComponent } from './vivienda/vivienda-list/vivienda-list.component';
+import { LugarListComponent } from './lugar/lugar-list/lugar-list.component';
+import { PropietarioListComponent } from './propietario/propietario-list/propietario-list.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,7 +13,7 @@ describe('AppComponent', () => {
         RouterTestingModule, HttpClientModule
       ],
       declarations: [
-        AppComponent, ViviendaListComponent
+        AppComponent, ViviendaListComponent, LugarListComponent, PropietarioListComponent
       ],
     }).compileComponents();
   });

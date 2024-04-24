@@ -6,10 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ViviendaModule } from './vivienda/vivienda.module';
 import { LugarModule } from './lugar/lugar.module';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { PropietarioModule } from './propietario/propietario.module';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule,
     ViviendaModule,
-    PropietarioModule
+    PropietarioModule,
     LugarModule,
     PropietarioModule,
     HttpClientModule,
