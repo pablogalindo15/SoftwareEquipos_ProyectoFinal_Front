@@ -1,18 +1,69 @@
 <testExecutions version="1">
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should have as title 'mynewapp'" duration="69">
+      <failure message="Error">Error: NG0304: 'app-vivienda-detail' is not a known element (used in the 'ViviendaListComponent' component template):
+1. If 'app-vivienda-detail' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-vivienda-detail' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+error properties: Object({ code: 304 })
+    at validateElementIsKnown (node_modules/@angular/core/fesm2022/core.mjs:9160:23)
+    at ɵɵelementStart (node_modules/@angular/core/fesm2022/core.mjs:22495:9)
+    at ɵɵelement (node_modules/@angular/core/fesm2022/core.mjs:22570:5)
+    at templateFn (ng:///ViviendaListComponent.js:40:9)
+    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:10766:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11968:13)
+    at renderComponent (node_modules/@angular/core/fesm2022/core.mjs:11914:5)
+    at renderChildComponents (node_modules/@angular/core/fesm2022/core.mjs:12016:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11996:13)
+    at renderComponent (node_modules/@angular/core/fesm2022/core.mjs:11914:5)
+</failure>
+    </testCase>
+    <testCase name="AppComponent should create the app" duration="7">
+      <failure message="Error">Error: NG0304: 'app-vivienda-detail' is not a known element (used in the 'ViviendaListComponent' component template):
+1. If 'app-vivienda-detail' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-vivienda-detail' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+error properties: Object({ code: 304 })
+    at validateElementIsKnown (node_modules/@angular/core/fesm2022/core.mjs:9160:23)
+    at ɵɵelementStart (node_modules/@angular/core/fesm2022/core.mjs:22495:9)
+    at ɵɵelement (node_modules/@angular/core/fesm2022/core.mjs:22570:5)
+    at templateFn (ng:///ViviendaListComponent.js:40:9)
+    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:10766:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11968:13)
+    at renderComponent (node_modules/@angular/core/fesm2022/core.mjs:11914:5)
+    at renderChildComponents (node_modules/@angular/core/fesm2022/core.mjs:12016:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11996:13)
+    at renderComponent (node_modules/@angular/core/fesm2022/core.mjs:11914:5)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
+    <testCase name="PropietarioListComponent should create" duration="7"/>
+  </file>
   <file path="src/app/vivienda/vivienda.service.spec.ts">
-    <testCase name="Service: Vivienda should ..." duration="14"/>
+    <testCase name="Service: Vivienda should ..." duration="2"/>
   </file>
   <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
-    <testCase name="ViviendaListComponent should create" duration="50"/>
+    <testCase name="ViviendaListComponent should create" duration="7">
+      <failure message="Error">Error: NG0304: 'app-vivienda-detail' is not a known element (used in the 'ViviendaListComponent' component template):
+1. If 'app-vivienda-detail' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-vivienda-detail' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+error properties: Object({ code: 304 })
+    at validateElementIsKnown (node_modules/@angular/core/fesm2022/core.mjs:9160:23)
+    at ɵɵelementStart (node_modules/@angular/core/fesm2022/core.mjs:22495:9)
+    at ɵɵelement (node_modules/@angular/core/fesm2022/core.mjs:22570:5)
+    at templateFn (ng:///ViviendaListComponent.js:40:9)
+    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:10766:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11968:13)
+    at renderComponent (node_modules/@angular/core/fesm2022/core.mjs:11914:5)
+    at renderChildComponents (node_modules/@angular/core/fesm2022/core.mjs:12016:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11996:13)
+    at ComponentFactory.create (node_modules/@angular/core/fesm2022/core.mjs:15401:17)
+</failure>
+    </testCase>
   </file>
   <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
     <testCase name="LugarListComponent should create" duration="6"/>
   </file>
-  <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
-    <testCase name="PropietarioListComponent should create" duration="3"/>
-  </file>
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'mynewapp'" duration="7"/>
-    <testCase name="AppComponent should create the app" duration="4"/>
+  <file path="src/app/vivienda/vivienda-detail/vivienda-detail.component.spec.ts">
+    <testCase name="ViviendaDetailComponent should create" duration="6"/>
   </file>
 </testExecutions>
