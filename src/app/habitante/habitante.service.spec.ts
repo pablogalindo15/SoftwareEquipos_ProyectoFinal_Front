@@ -1,7 +1,8 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, async, inject } from '@angular/core/testing';
 
 import { HabitanteService } from './habitante.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+
 
 describe('Service: Habitante', () => {
   beforeEach(() => {

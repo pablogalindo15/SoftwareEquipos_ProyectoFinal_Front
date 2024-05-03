@@ -18,7 +18,7 @@ export class HabitanteListComponent implements OnInit {
   });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getHabitantes();
   }
 
