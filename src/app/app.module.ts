@@ -8,10 +8,14 @@ import { ViviendaModule } from './vivienda/vivienda.module';
 import { LugarModule } from './lugar/lugar.module';
 import { PropietarioModule } from './propietario/propietario.module';
 import { HabitanteModule } from './habitante/habitante.module';
+import { ComentarioComponent } from './comentario/comentario.component';
+import { ComentarioListComponent } from './comentario/comentario-list/comentario-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ComentarioComponent,
+    ComentarioListComponent
   ],
   imports: [
     BrowserModule,
