@@ -21,6 +21,7 @@ import {ComentarioModule} from './comentario/comentario.module';
     PropietarioModule,
     LugarModule,
     PropietarioModule,
+    ComentarioModule,
     HttpClientModule,
   ],
   providers: [
