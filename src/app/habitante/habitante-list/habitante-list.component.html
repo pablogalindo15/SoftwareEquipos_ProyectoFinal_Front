@@ -1,0 +1,19 @@
+
+<div class="container-fluid">
+  <p>habitante-list works!</p>
+  <div class="row">
+      <div class="col mb-2" *ngFor ="let habitante of habitantes" >
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{habitante.nombre}}</h5>
+            <p class="card-text">{{habitante.cedula}}</p>
+
+
+          </div>
+        </div>
+    
+
+      </div>
+  </div>
+</div>
+

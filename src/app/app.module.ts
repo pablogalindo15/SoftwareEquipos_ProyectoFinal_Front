@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViviendaModule } from './vivienda/vivienda.module';
 import { LugarModule } from './lugar/lugar.module';
 import { PropietarioModule } from './propietario/propietario.module';
+import { HabitanteModule } from './habitante/habitante.module';
+import { ComentarioModule } from './comentario/comentario.module';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,8 @@ import { PropietarioModule } from './propietario/propietario.module';
     ViviendaModule,
     PropietarioModule,
     LugarModule,
-    PropietarioModule,
-    HttpClientModule,
+    ComentarioModule,
+    HabitanteModule,
   ],
   providers: [
     provideClientHydration()
