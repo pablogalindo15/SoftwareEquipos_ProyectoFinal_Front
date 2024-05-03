@@ -1,18 +1,86 @@
 <testExecutions version="1">
+  <file path="src/app/habitante/habitante-list/habitante-list.component.spec.ts">
+    <testCase name="HabitanteListComponent should create" duration="47">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[HabitanteService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'HabitanteService', 'HttpClient', 'HttpClient' ] })
+    at NullInjector.get (node_modules/@angular/core/fesm2022/core.mjs:1654:27)
+    at R3Injector.get (node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+    at R3Injector.get (node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2022/core.mjs:1100:40)
+    at ɵɵinject (node_modules/@angular/core/fesm2022/core.mjs:1106:60)
+    at Object.factory (ng:///HabitanteService/ɵfac.js:4:44)
+    at callback (node_modules/@angular/core/fesm2022/core.mjs:3219:47)
+    at runInInjectorProfilerContext (node_modules/@angular/core/fesm2022/core.mjs:866:9)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2022/core.mjs:3218:21)
+    at R3Injector.get (node_modules/@angular/core/fesm2022/core.mjs:3082:33)
+</failure>
+    </testCase>
+  </file>
   <file path="src/app/vivienda/vivienda.service.spec.ts">
-    <testCase name="Service: Vivienda should ..." duration="14"/>
+    <testCase name="Service: Vivienda should ..." duration="3"/>
   </file>
   <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
-    <testCase name="ViviendaListComponent should create" duration="50"/>
-  </file>
-  <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
-    <testCase name="LugarListComponent should create" duration="6"/>
+    <testCase name="ViviendaListComponent should create" duration="18"/>
   </file>
   <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
-    <testCase name="PropietarioListComponent should create" duration="3"/>
+    <testCase name="PropietarioListComponent should create" duration="4"/>
   </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'mynewapp'" duration="7"/>
-    <testCase name="AppComponent should create the app" duration="4"/>
+    <testCase name="AppComponent should have as title 'mynewapp'" duration="8">
+      <failure message="Error">Error: NG0304: 'app-habitante-list' is not a known element (used in the 'AppComponent' component template):
+1. If 'app-habitante-list' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-habitante-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+error properties: Object({ code: 304 })
+    at validateElementIsKnown (node_modules/@angular/core/fesm2022/core.mjs:9160:23)
+    at ɵɵelementStart (node_modules/@angular/core/fesm2022/core.mjs:22495:9)
+    at ɵɵelement (node_modules/@angular/core/fesm2022/core.mjs:22570:5)
+    at templateFn (ng:///AppComponent.js:6:34)
+    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:10766:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11968:13)
+    at renderComponent (node_modules/@angular/core/fesm2022/core.mjs:11914:5)
+    at renderChildComponents (node_modules/@angular/core/fesm2022/core.mjs:12016:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11996:13)
+    at ComponentFactory.create (node_modules/@angular/core/fesm2022/core.mjs:15401:17)
+</failure>
+    </testCase>
+    <testCase name="AppComponent should create the app" duration="4">
+      <failure message="Error">Error: NG0304: 'app-habitante-list' is not a known element (used in the 'AppComponent' component template):
+1. If 'app-habitante-list' is an Angular component, then verify that it is a part of an @NgModule where this component is declared.
+2. If 'app-habitante-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+error properties: Object({ code: 304 })
+    at validateElementIsKnown (node_modules/@angular/core/fesm2022/core.mjs:9160:23)
+    at ɵɵelementStart (node_modules/@angular/core/fesm2022/core.mjs:22495:9)
+    at ɵɵelement (node_modules/@angular/core/fesm2022/core.mjs:22570:5)
+    at templateFn (ng:///AppComponent.js:6:34)
+    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:10766:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11968:13)
+    at renderComponent (node_modules/@angular/core/fesm2022/core.mjs:11914:5)
+    at renderChildComponents (node_modules/@angular/core/fesm2022/core.mjs:12016:9)
+    at renderView (node_modules/@angular/core/fesm2022/core.mjs:11996:13)
+    at ComponentFactory.create (node_modules/@angular/core/fesm2022/core.mjs:15401:17)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
+    <testCase name="LugarListComponent should create" duration="3"/>
+  </file>
+  <file path="src/app/habitante/habitante.service.spec.ts">
+    <testCase name="HabitanteService should be created" duration="2">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[HabitanteService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'HabitanteService', 'HttpClient', 'HttpClient' ] })
+    at NullInjector.get (node_modules/@angular/core/fesm2022/core.mjs:1654:27)
+    at R3Injector.get (node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+    at R3Injector.get (node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2022/core.mjs:1100:40)
+    at ɵɵinject (node_modules/@angular/core/fesm2022/core.mjs:1106:60)
+    at Object.factory (ng:///HabitanteService/ɵfac.js:4:44)
+    at callback (node_modules/@angular/core/fesm2022/core.mjs:3219:47)
+    at runInInjectorProfilerContext (node_modules/@angular/core/fesm2022/core.mjs:866:9)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2022/core.mjs:3218:21)
+    at R3Injector.get (node_modules/@angular/core/fesm2022/core.mjs:3082:33)
+</failure>
+    </testCase>
   </file>
 </testExecutions>

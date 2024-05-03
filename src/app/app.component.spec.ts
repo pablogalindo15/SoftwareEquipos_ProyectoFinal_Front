@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ViviendaListComponent } from './vivienda/vivienda-list/vivienda-list.component';
 import { LugarListComponent } from './lugar/lugar-list/lugar-list.component';
 import { PropietarioListComponent } from './propietario/propietario-list/propietario-list.component';
+import { HabitanteListComponent } from './habitante/habitante-list/habitante-list.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -13,7 +14,7 @@ describe('AppComponent', () => {
         RouterTestingModule, HttpClientModule
       ],
       declarations: [
-        AppComponent, ViviendaListComponent, LugarListComponent, PropietarioListComponent
+        AppComponent, ViviendaListComponent, LugarListComponent, PropietarioListComponent, HabitanteListComponent
       ],
     }).compileComponents();
   });
