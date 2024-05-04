@@ -1,6 +1,11 @@
+<div *ngIf="selected">
+  <app-vivienda-detail [viviendaDetail]="selectedVivienda"></app-vivienda-detail>
+</div>
+
+<hr />
+
 <div class="container-fluid">
   <p>vivienda-list works!</p>
-  <p>{{x}}</p>
     <div class="row">
         <div class="col mb-2" *ngFor="let vivienda of viviendas">
             <div class="card p-2" style="width: 15rem; height: 33rem">
@@ -8,15 +13,14 @@
                   class="card-img-top"
                   src="{{ vivienda.fotos }}"
                   alt="{{ vivienda.nombre }}"
+                  
+                  (click)="onSelected(vivienda)"
                 />
                 <div class="card-body">
                   <h5 class="card-title">{{ vivienda.nombre }}</h5>
-                  <p class="card-text">[{{ vivienda.propietario.nombre }}]</p>          
+                  <p class="card-text">[{{ vivienda.propietario.nombre }}]</p>     
                 </div>
               </div>
-        </div>
-        <div>
-          <app-vivienda-detail></app-vivienda-detail>
         </div>
     </div>
 </div>

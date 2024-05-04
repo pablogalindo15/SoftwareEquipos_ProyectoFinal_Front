@@ -1,1 +1,36 @@
-<p>vivienda-detail works!</p>
+<div class="container-fluid">
+    <p class="h3 p-3">{{ viviendaDetail.nombre}}</p>
+    <div class="row">
+        <div class="col-2">
+            <div class="thumb">
+                <img
+                  class="img-fluid"
+                  src="{{ viviendaDetail.fotos }}"
+                  alt="{{ viviendaDetail.nombre }}"
+                />
+            </div>
+        </div>
+        <div class="col">
+            <dl>
+                <dt>Lugares</dt>
+                <dd class ="caption" *ngFor="let lugar of viviendaDetail.lugarDeInteres_cercano">
+                    {{ lugar.nombre }}
+                </dd> 
+                <dt>Habitantes Actuales</dt>
+                <dd class ="caption" *ngFor="let habitante of viviendaDetail.habitantes_actuales">
+                    {{ habitante.nombre }}
+                </dd> 
+                <dt>Historial</dt>
+                <dd class ="caption" *ngFor="let p_historial of viviendaDetail.historial">
+                    {{ p_historial.nombre }}
+                </dd>
+                <dt>Propietario</dt>
+                <dd>{{ viviendaDetail.propietario.nombre}}</dd>
+
+                <dt>Detalles Adicionales</dt>
+                <dd>no informacion disponible</dd>
+
+            </dl>
+        </div>
+    </div>
+</div>

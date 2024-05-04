@@ -8,6 +8,11 @@ import {ViviendaDetail} from '../vivienda-detail'
   styleUrl: './vivienda-detail.component.css'
 })
 export class ViviendaDetailComponent {
-  @Input() viviendaDetail: ViviendaDetail | null=null;
+  @Input() viviendaDetail !: ViviendaDetail;
+
+  constructor(){}
+
+  ngOnInit(){
+
+  }
 }
- 

@@ -6,7 +6,7 @@ import { ViviendaListComponent } from './vivienda/vivienda-list/vivienda-list.co
 import { LugarListComponent } from './lugar/lugar-list/lugar-list.component';
 import { PropietarioListComponent } from './propietario/propietario-list/propietario-list.component';
 import { HabitanteListComponent } from './habitante/habitante-list/habitante-list.component';
-
+import { ComentarioListComponent } from './comentario/comentario-list/comentario-list.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -14,7 +14,7 @@ describe('AppComponent', () => {
         RouterTestingModule, HttpClientModule
       ],
       declarations: [
-        AppComponent, ViviendaListComponent, LugarListComponent, PropietarioListComponent, HabitanteListComponent
+        AppComponent, ViviendaListComponent, LugarListComponent, PropietarioListComponent, HabitanteListComponent, ComentarioListComponent
       ],
     }).compileComponents();
   });
