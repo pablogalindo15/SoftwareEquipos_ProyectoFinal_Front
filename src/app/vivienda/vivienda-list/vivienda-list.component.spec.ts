@@ -23,38 +23,6 @@ describe('ViviendaListComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ViviendaListComponent);
     component = fixture.componentInstance;
-
-    // const propietario = new Propietario(
-    //   faker.number.int(),
-    //   faker.image.url(),
-    //   faker.lorem.sentence(),
-    //   faker.number.int(),
-    //   faker.lorem.sentence()
-    // )
-
-    // for(let i=0;i<10;i++){
-    //   const vivienda = new ViviendaDetail(
-    //     faker.number.int(),
-    //     faker.lorem.sentence(),
-    //     faker.number.float(),
-    //     faker.lorem.sentence(),
-    //     faker.image.url(),
-    //     faker.number.int(),
-    //     faker.random.number({min:0, max:6}),
-    //     faker.lorem.sentence(),
-    //     faker.random.number({min:0, max:3}),
-    //     faker.lorem.sentence(),
-    //     faker.lorem.sentence(),
-    //     faker.random.boolean(),
-    //     faker.number.int(),
-    //     faker.number.int(),
-    //     propietario,
-    //     [],
-    //     [],
-    //     []
-    //   )
-    // }
-
     fixture.detectChanges();
   });
  

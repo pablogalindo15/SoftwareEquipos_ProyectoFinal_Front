@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Vivienda } from '../vivienda';
 import {ViviendaDetail} from '../vivienda-detail'
 
 @Component({
@@ -7,7 +6,7 @@ import {ViviendaDetail} from '../vivienda-detail'
   templateUrl: './vivienda-detail.component.html',
   styleUrl: './vivienda-detail.component.css'
 })
-export class ViviendaDetailComponent {
+export class ViviendaDetailComponent implements OnInit{
   @Input() viviendaDetail !: ViviendaDetail;
 
   constructor(){}

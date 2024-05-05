@@ -3,11 +3,11 @@ import { Propietario } from "../propietario/propietario";
 import { Habitante } from "../habitante/habitante";
 import { lugar } from "../lugar/lugar";
 
-enum posiblesEstratos{
+export enum posiblesEstratos{
     uno,  dos, tres, cuatro, cinco, seis
 };
 
-enum tipoVivienda{
+export enum tipoVivienda{
     apartaestudio, apartamentoComp, habitaconEnApto, habitacionFamilia
 };
 

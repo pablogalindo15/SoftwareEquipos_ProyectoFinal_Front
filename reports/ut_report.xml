@@ -1,43 +1,32 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'mynewapp'" duration="89"/>
-    <testCase name="AppComponent should create the app" duration="5"/>
-  </file>
-  <file path="src/app/habitante/habitante.service.spec.ts">
-    <testCase name="Service: Habitante should ..." duration="2"/>
-  </file>
-  <file path="src/app/vivienda/vivienda.service.spec.ts">
-    <testCase name="Service: Vivienda should ..." duration="2"/>
-  </file>
-  <file path="src/app/comentario/comentario-list/comentario-list.component.spec.ts">
-    <testCase name="ComentarioListComponent should create" duration="3"/>
-  </file>
   <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
-    <testCase name="LugarListComponent should create" duration="3"/>
+    <testCase name="LugarListComponent should create" duration="53"/>
   </file>
   <file path="src/app/habitante/habitante-list/habitante-list.component.spec.ts">
-    <testCase name="HabitanteListComponent should create" duration="5"/>
+    <testCase name="HabitanteListComponent should create" duration="36"/>
+  </file>
+  <file path="src/app/habitante/habitante.service.spec.ts">
+    <testCase name="Service: Habitante should ..." duration="4"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should have as title 'mynewapp'" duration="36"/>
+    <testCase name="AppComponent should create the app" duration="4"/>
   </file>
   <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
-    <testCase name="PropietarioListComponent should create" duration="2"/>
-  </file>
-  <file path="src/app/vivienda/vivienda-detail/vivienda-detail.component.spec.ts">
-    <testCase name="ViviendaDetailComponent should create" duration="11">
-      <failure message="Error">TypeError: Cannot read properties of undefined (reading 'nombre')
-    at templateFn (ng:///ViviendaDetailComponent.js:29:52)
-    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:10766:9)
-    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:12336:13)
-    at detectChangesInView$1 (node_modules/@angular/core/fesm2022/core.mjs:12560:9)
-    at detectChangesInViewIfAttached (node_modules/@angular/core/fesm2022/core.mjs:12523:5)
-    at detectChangesInComponent (node_modules/@angular/core/fesm2022/core.mjs:12512:5)
-    at detectChangesInChildComponents (node_modules/@angular/core/fesm2022/core.mjs:12573:9)
-    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:12386:13)
-    at detectChangesInView$1 (node_modules/@angular/core/fesm2022/core.mjs:12560:9)
-    at detectChangesInViewWhileDirty (node_modules/@angular/core/fesm2022/core.mjs:12277:5)
-</failure>
-    </testCase>
+    <testCase name="PropietarioListComponent should create" duration="5"/>
   </file>
   <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
-    <testCase name="ViviendaListComponent should create" duration="4"/>
+    <testCase name="ViviendaListComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/vivienda/vivienda-detail/vivienda-detail.component.spec.ts">
+    <testCase name="ViviendaDetailComponent should create" duration="33"/>
+    <testCase name="ViviendaDetailComponent should have a p.h3.p-3 element with viviendaDetail.nombre" duration="10"/>
+    <testCase name="ViviendaDetailComponent should have an image element with correct src and alt attributes" duration="8"/>
+  </file>
+  <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
+    <testCase name="LugarListComponent should create" duration="4"/>
+  </file>
+  <file path="src/app/vivienda/vivienda.service.spec.ts">
+    <testCase name="Service: Vivienda should ..." duration="3"/>
   </file>
 </testExecutions>

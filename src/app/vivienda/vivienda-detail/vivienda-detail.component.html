@@ -12,10 +12,39 @@
         </div>
         <div class="col">
             <dl>
-                <dt>Lugares</dt>
+                <dt>Descripcion</dt>
+                <dd>{{viviendaDetail.descripcion}}</dd>
+                <dt>Tipo</dt>
+                <dd>{{viviendaDetail.tipo}}</dd>
+                <dt>Direccion</dt>
+                <dd>{{viviendaDetail.direccion}}</dd>
+                <dt>Precio</dt>
+                <dd>{{viviendaDetail.precio}}</dd>
+            </dl>
+        </div>
+        <div class="col">
+            <dl>
+                <dt>Tamano</dt>
+                <dd>{{viviendaDetail.tamano}}</dd>
+                <dt>Estrato</dt>
+                <dd>{{viviendaDetail.estrato}}</dd>
+                <dt>Restricciones</dt>
+                <dd>{{viviendaDetail.restricciones}}</dd>
+                <dt>Ocupada</dt>
+                <dd>{{viviendaDetail.ocupada}}</dd>
+            </dl>
+        </div>
+        <div class="col">
+            <dl>
+                <dt>Lugares Cercanos</dt>
                 <dd class ="caption" *ngFor="let lugar of viviendaDetail.lugarDeInteres_cercano">
                     {{ lugar.nombre }}
                 </dd> 
+            </dl>
+        </div>
+
+        <div class="col">
+            <dl>
                 <dt>Habitantes Actuales</dt>
                 <dd class ="caption" *ngFor="let habitante of viviendaDetail.habitantes_actuales">
                     {{ habitante.nombre }}
@@ -24,12 +53,6 @@
                 <dd class ="caption" *ngFor="let p_historial of viviendaDetail.historial">
                     {{ p_historial.nombre }}
                 </dd>
-                <dt>Propietario</dt>
-                <dd>{{ viviendaDetail.propietario.nombre}}</dd>
-
-                <dt>Detalles Adicionales</dt>
-                <dd>no informacion disponible</dd>
-
             </dl>
         </div>
     </div>
