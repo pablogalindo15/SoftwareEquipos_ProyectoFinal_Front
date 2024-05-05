@@ -1,0 +1,23 @@
+
+<div class="container-fluid">
+  <p>habitante-list works!</p>
+  <div class="row">
+      <div class="col mb-2" *ngFor ="let comentario of comentarios" >
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{comentario.titulo}}</h5>
+            <p class="card-text">{{comentario.texto}}</p>
+
+            <p class="card-text">{{comentario.calificacion}}</p>
+            <p class="card-text">{{comentario.nombre}}</p>
+
+
+
+          </div>
+        </div>
+    
+
+      </div>
+  </div>
+</div>
+

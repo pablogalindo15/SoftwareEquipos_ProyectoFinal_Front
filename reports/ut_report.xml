@@ -1,0 +1,32 @@
+<testExecutions version="1">
+  <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
+    <testCase name="LugarListComponent should create" duration="53"/>
+  </file>
+  <file path="src/app/habitante/habitante-list/habitante-list.component.spec.ts">
+    <testCase name="HabitanteListComponent should create" duration="36"/>
+  </file>
+  <file path="src/app/habitante/habitante.service.spec.ts">
+    <testCase name="Service: Habitante should ..." duration="4"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should have as title 'mynewapp'" duration="36"/>
+    <testCase name="AppComponent should create the app" duration="4"/>
+  </file>
+  <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
+    <testCase name="PropietarioListComponent should create" duration="5"/>
+  </file>
+  <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
+    <testCase name="ViviendaListComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/vivienda/vivienda-detail/vivienda-detail.component.spec.ts">
+    <testCase name="ViviendaDetailComponent should create" duration="33"/>
+    <testCase name="ViviendaDetailComponent should have a p.h3.p-3 element with viviendaDetail.nombre" duration="10"/>
+    <testCase name="ViviendaDetailComponent should have an image element with correct src and alt attributes" duration="8"/>
+  </file>
+  <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
+    <testCase name="LugarListComponent should create" duration="4"/>
+  </file>
+  <file path="src/app/vivienda/vivienda.service.spec.ts">
+    <testCase name="Service: Vivienda should ..." duration="3"/>
+  </file>
+</testExecutions>

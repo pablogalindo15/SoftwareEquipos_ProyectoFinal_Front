@@ -3,25 +3,24 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { faker } from '@faker-js/faker';
 
-import { ViviendaListComponent } from './vivienda-list.component';
+import { ComentarioListComponent } from './comentario-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Propietario } from '../../propietario/propietario';
-import { ViviendaDetail } from '../vivienda-detail';
 
 describe('ViviendaListComponent', () => {
-  let component: ViviendaListComponent;
-  let fixture: ComponentFixture<ViviendaListComponent>;
+  let component: ComentarioListComponent;
+  let fixture: ComponentFixture<ComentarioListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule],
-      declarations: [ ViviendaListComponent ]
+      declarations: [ ComentarioListComponent ]
     })
     .compileComponents();
   }));
  
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViviendaListComponent);
+    fixture = TestBed.createComponent(ComentarioListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

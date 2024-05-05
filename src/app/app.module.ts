@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-import { ViviendaModule } from './vivienda/vivienda.module';
-import { LugarModule } from './lugar/lugar.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PropietarioModule } from './propietario/propietario.module';
 import { HttpClientModule } from '@angular/common/http';
+
+import { ViviendaModule } from './vivienda/vivienda.module';
+import { LugarModule } from './lugar/lugar.module';
+import { PropietarioModule } from './propietario/propietario.module';
+import { HabitanteModule } from './habitante/habitante.module';
+import { ComentarioModule } from './comentario/comentario.module';
 
 @NgModule({
   declarations: [
@@ -14,10 +17,12 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ViviendaModule,
-    LugarModule,
-    PropietarioModule,
     HttpClientModule,
+    ViviendaModule,
+    PropietarioModule,
+    LugarModule,
+    ComentarioModule,
+    HabitanteModule,
   ],
   providers: [
     provideClientHydration()
