@@ -1,7 +1,7 @@
 import { Vivienda } from "./vivienda";
 import { Propietario } from "../propietario/propietario";
 import { Habitante } from "../habitante/habitante";
-import { lugar } from "../lugar/lugar";
+import { Lugar } from "../lugar/lugar";
 
 export enum posiblesEstratos{
     uno,  dos, tres, cuatro, cinco, seis
@@ -12,7 +12,7 @@ export enum tipoVivienda{
 };
 
 export class ViviendaDetail extends Vivienda{
-    lugarDeInteres_cercano: Array<lugar>= [];
+    lugarDeInteres_cercano: Array<Lugar>= [];
     habitantes_actuales: Array<Habitante>=[];
     historial: Array<Habitante>=[];
 
@@ -32,7 +32,7 @@ export class ViviendaDetail extends Vivienda{
         coordX:number,
         coordY: number,
         propietario: Propietario,
-        lugarDeInteres_cercano: Array<lugar>,
+        lugarDeInteres_cercano: Array<Lugar>,
         habitantes_actuales:Array<Habitante>,
         historial: Array<Habitante>
     )

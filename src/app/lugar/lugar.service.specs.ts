@@ -1,11 +1,18 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+/* tslint:disable:no-unused-variable */
+import { TestBed, async, inject } from '@angular/core/testing';
+import { LugarService } from './lugar.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-@Injectable({
- providedIn: 'root'
-})
-export class LugarService {
+describe('Service: Lugar', () => {
+ beforeEach(() => {
+   TestBed.configureTestingModule({
+     imports: [HttpClientTestingModule],
+     providers: [LugarService]
+   });
+ });
 
-constructor(private http: HttpClient) { }
+ it('should ...', inject([LugarService], (service: LugarService) => {
+   expect(service).toBeTruthy();
+ }));
+});
 
-}

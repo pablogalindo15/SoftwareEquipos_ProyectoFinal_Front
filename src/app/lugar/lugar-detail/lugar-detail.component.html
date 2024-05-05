@@ -1,0 +1,24 @@
+
+<div class="container-fluid">
+  <p class="h3 p-3">{{ lugarDetail.nombre }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <img
+          class="img-fluid"
+          src="{{ lugarDetail.fotos }}"
+          alt="{{ lugarDetail.nombre }}"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>Precio Min</dt>
+        <dd>{{ lugarDetail.precioMin }}</dd>
+        <hr />
+        <dt>Precio Max</dt>
+        <dd>{{ lugarDetail.precioMax }}</dd>
+      </dl>
+    </div>
+  </div>
+</div>
