@@ -1,59 +1,68 @@
 <testExecutions version="1">
-  <file path="src/app/vivienda/vivienda.service.spec.ts">
-    <testCase name="Service: Vivienda should ..." duration="16"/>
-  </file>
-  <file path="src/app/propietario/propietario.service.spec.ts">
-    <testCase name="PropietarioService should be created" duration="4"/>
-  </file>
-  <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
-    <testCase name="PropietarioListComponent should create" duration="62"/>
-  </file>
-  <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
-    <testCase name="ViviendaListComponent should create" duration="14"/>
-  </file>
-  <file path="src/app/vivienda/vivienda-detail/vivienda-detail.component.spec.ts">
-    <testCase name="ViviendaDetailComponent should have an image element with correct src and alt attributes" duration="36"/>
-    <testCase name="ViviendaDetailComponent should have a p.h3.p-3 element with viviendaDetail.nombre" duration="13"/>
-    <testCase name="ViviendaDetailComponent should create" duration="9"/>
-  </file>
   <file path="src/app/comentario/comentario-detail/comentario-detail.component.spec.ts">
-    <testCase name="ComentarioDetailComponent should create" duration="21">
-      <failure message="Error">TypeError: Cannot read properties of undefined (reading 'titulo')
-    at templateFn (ng:///ComentarioDetailComponent.js:32:54)
-    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:10766:9)
-    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:12336:13)
-    at detectChangesInView$1 (node_modules/@angular/core/fesm2022/core.mjs:12560:9)
-    at detectChangesInViewIfAttached (node_modules/@angular/core/fesm2022/core.mjs:12523:5)
-    at detectChangesInComponent (node_modules/@angular/core/fesm2022/core.mjs:12512:5)
-    at detectChangesInChildComponents (node_modules/@angular/core/fesm2022/core.mjs:12573:9)
-    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:12386:13)
-    at detectChangesInView$1 (node_modules/@angular/core/fesm2022/core.mjs:12560:9)
-    at detectChangesInViewWhileDirty (node_modules/@angular/core/fesm2022/core.mjs:12277:5)
+    <testCase name="ComentarioDetailComponent should create" duration="26"/>
+    <testCase name="ComentarioDetailComponent should have a p.h3.p-3 element with comentarioDetail.nombre" duration="3">
+      <failure message="Error">Expected 'Theresia15' to contain '^.VBg#J2m['.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/comentario/comentario-detail/comentario-detail.component.spec.ts:57:37)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
 </failure>
     </testCase>
   </file>
-  <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
-    <testCase name="ViviendaListComponent should create" duration="24"/>
+  <file path="src/app/vivienda/vivienda.service.spec.ts">
+    <testCase name="Service: Vivienda should ..." duration="1"/>
   </file>
-  <file path="src/app/habitante/habitante.service.spec.ts">
-    <testCase name="Service: Habitante should ..." duration="5"/>
+  <file path="src/app/servicio/servicio-list/servicio-list.component.spec.ts">
+    <testCase name="ServicioListComponent should create" duration="10"/>
   </file>
-  <file path="src/app/comentario/comentario.service.spec.ts">
-    <testCase name="Service: Comentario should ..." duration="4"/>
+  <file path="src/app/servicio/servicio-detail/servicio-detail.component.spec.ts">
+    <testCase name="ServicioDetailComponent should have a p.h3.p-3 element with servicioDetail.nombre" duration="3"/>
+    <testCase name="ServicioDetailComponent should create" duration="1"/>
   </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'mynewapp'" duration="32"/>
-    <testCase name="AppComponent should create the app" duration="8"/>
+    <testCase name="AppComponent should have as title 'mynewapp'" duration="13"/>
+    <testCase name="AppComponent should create the app" duration="1"/>
   </file>
-  <file path="src/app/habitante/habitante-list/habitante-list.component.spec.ts">
-    <testCase name="HabitanteListComponent should create" duration="7"/>
+  <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
+    <testCase name="PropietarioListComponent should create" duration="1"/>
   </file>
-  <file path="src/app/lugar/lugar-detail/lugar-detail.component.spec.ts">
-    <testCase name="LugarDetailComponent should create" duration="12"/>
-    <testCase name="LugarDetailComponent should have an image element with correct src and alt attributes" duration="6"/>
-    <testCase name="LugarDetailComponent should have a p.h3.p-3 element with lugarDetail.nombre" duration="8"/>
+  <file path="src/app/vivienda/vivienda-detail/vivienda-detail.component.spec.ts">
+    <testCase name="ViviendaDetailComponent should have an image element with correct src and alt attributes" duration="6"/>
+    <testCase name="ViviendaDetailComponent should create" duration="1"/>
+    <testCase name="ViviendaDetailComponent should have a p.h3.p-3 element with viviendaDetail.nombre" duration="1"/>
   </file>
   <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
-    <testCase name="LugarListComponent should create" duration="17"/>
+    <testCase name="LugarListComponent should create" duration="2"/>
+  </file>
+  <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
+    <testCase name="ViviendaListComponent should create" duration="1"/>
+  </file>
+  <file path="src/app/propietario/propietario.service.spec.ts">
+    <testCase name="PropietarioService should be created" duration="1"/>
+  </file>
+  <file path="src/app/habitante/habitante.service.spec.ts">
+    <testCase name="Service: Habitante should ..." duration="1"/>
+  </file>
+  <file path="src/app/habitante/habitante-list/habitante-list.component.spec.ts">
+    <testCase name="HabitanteListComponent should create" duration="1"/>
+  </file>
+  <file path="src/app/servicio/servicio.service.spec.ts">
+    <testCase name="Service: Servicio should ..." duration="1"/>
+  </file>
+  <file path="src/app/habitante/habitante-detail/habitante-detail.component.spec.ts">
+    <testCase name="HabitanteDetailComponent should create" duration="2"/>
+  </file>
+  <file path="src/app/comentario/comentario.service.spec.ts">
+    <testCase name="Service: Comentario should ..." duration="1"/>
+  </file>
+  <file path="src/app/lugar/lugar-detail/lugar-detail.component.spec.ts">
+    <testCase name="LugarDetailComponent should create" duration="2"/>
+    <testCase name="LugarDetailComponent should have a p.h3.p-3 element with lugarDetail.nombre" duration="1"/>
+    <testCase name="LugarDetailComponent should have an image element with correct src and alt attributes" duration="1"/>
+  </file>
+  <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
+    <testCase name="ViviendaListComponent should create" duration="1"/>
   </file>
 </testExecutions>
