@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { Comentario } from '../comentario';
+import { ComentarioDetail } from '../comentario-detail';
 
 @Component({
   selector: 'app-comentario-detail',
@@ -7,7 +8,7 @@ import { Comentario } from '../comentario';
   styleUrls: ['./comentario-detail.component.css']
 })
 export class ComentarioDetailComponent implements OnInit {
-@Input() comentarioDetail!: Comentario;
+@Input() comentarioDetail!: ComentarioDetail;
   constructor() { }
 
   ngOnInit() {
