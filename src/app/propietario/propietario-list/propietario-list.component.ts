@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Propietario } from '../propietario';
 import { PropietarioService } from '../propietario.service';
-import { PropietarioDetail } from '../propietario-detail';
 
 @Component({
   selector: 'app-propietario-list',
@@ -9,15 +8,7 @@ import { PropietarioDetail } from '../propietario-detail';
   styleUrl: './propietario-list.component.css'
 })
 export class PropietarioListComponent implements OnInit {
-
-  selectedPropietario!: PropietarioDetail;
-  selected: Boolean = false;
-  propietarios: Array<PropietarioDetail> = [];
-
-  onSelected(propietario: PropietarioDetail): void {
-    this.selected = true;
-    this.selectedPropietario = propietario;
-  }
+  propietarios: Array<Propietario> = [];
 
   constructor(private propietarioService: PropietarioService) { }
  

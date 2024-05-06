@@ -1,43 +1,4 @@
 <testExecutions version="1">
-<<<<<<< HEAD
-  <file path="src/app/comentario/comentario-detail/comentario-detail.component.spec.ts">
-    <testCase name="ComentarioDetailComponent should create" duration="132">
-      <failure message="Error">TypeError: Cannot read properties of undefined (reading 'titulo')
-    at templateFn (ng:///ComentarioDetailComponent.js:32:54)
-    at executeTemplate (node_modules/@angular/core/fesm2022/core.mjs:10766:9)
-    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:12336:13)
-    at detectChangesInView$1 (node_modules/@angular/core/fesm2022/core.mjs:12560:9)
-    at detectChangesInViewIfAttached (node_modules/@angular/core/fesm2022/core.mjs:12523:5)
-    at detectChangesInComponent (node_modules/@angular/core/fesm2022/core.mjs:12512:5)
-    at detectChangesInChildComponents (node_modules/@angular/core/fesm2022/core.mjs:12573:9)
-    at refreshView (node_modules/@angular/core/fesm2022/core.mjs:12386:13)
-    at detectChangesInView$1 (node_modules/@angular/core/fesm2022/core.mjs:12560:9)
-    at detectChangesInViewWhileDirty (node_modules/@angular/core/fesm2022/core.mjs:12277:5)
-</failure>
-    </testCase>
-  </file>
-  <file path="src/app/propietario/propietario.service.spec.ts">
-    <testCase name="PropietarioService should be created" duration="12"/>
-  </file>
-  <file path="src/app/habitante/habitante.service.spec.ts">
-    <testCase name="Service: Habitante should ..." duration="13"/>
-  </file>
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="131"/>
-    <testCase name="AppComponent should have as title 'mynewapp'" duration="13"/>
-  </file>
-  <file path="src/app/vivienda/vivienda.service.spec.ts">
-    <testCase name="Service: Vivienda should ..." duration="5"/>
-  </file>
-  <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
-    <testCase name="ViviendaListComponent should create" duration="23"/>
-  </file>
-  <file path="src/app/comentario/comentario.service.spec.ts">
-    <testCase name="Service: Comentario should ..." duration="6"/>
-  </file>
-  <file path="src/app/habitante/habitante-list/habitante-list.component.spec.ts">
-    <testCase name="HabitanteListComponent should create" duration="14"/>
-=======
   <file path="src/app/servicio/servicio-list/servicio-list.component.spec.ts">
     <testCase name="ServicioListComponent should create" duration="87"/>
   </file>
@@ -95,6 +56,5 @@
   <file path="src/app/app.component.spec.ts">
     <testCase name="AppComponent should create the app" duration="10"/>
     <testCase name="AppComponent should have as title 'mynewapp'" duration="5"/>
->>>>>>> 897b446f0b544776146950cc8d9d7199aa9d8634
   </file>
 </testExecutions>
