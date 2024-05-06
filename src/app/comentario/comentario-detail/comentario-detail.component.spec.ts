@@ -52,9 +52,9 @@ describe('ComentarioDetailComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have a p.h3.p-3 element with comentarioDetail.nombre', () => {
+  it('should have a p.h3.p-3 element with comentarioDetail.titulo', () => {
     const nameElement: HTMLElement = debug.query(By.css('p.h3.p-3')).nativeElement;
-    expect(nameElement.textContent).toContain(component.comentarioDetail.nombre);
+    expect(nameElement.textContent).toContain(component.comentarioDetail.titulo);
   });
 
  
