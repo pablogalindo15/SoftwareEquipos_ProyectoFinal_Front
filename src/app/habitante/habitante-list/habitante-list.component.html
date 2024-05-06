@@ -1,9 +1,15 @@
+<div *ngIf="selected">
+  <app-habitante-detail [habitanteDetail]="selectedHabitante"></app-habitante-detail>
+</div>
+
+<hr />
 
 <div class="container-fluid">
   <p>habitante-list works!</p>
   <div class="row">
       <div class="col mb-2" *ngFor ="let habitante of habitantes" >
-        <div class="card">
+        <div class="card mb-2>" style="width: 15rem; height: 33rem">
+         
           <div class="card-body">
             <h5 class="card-title">{{habitante.nombre}}</h5>
             <p class="card-text">{{habitante.cedula}}</p>
