@@ -1,23 +1,19 @@
-
-<div class="container-fluid">
-  <p>habitante-list works!</p>
-  <div class="row">
-      <div class="col mb-2" *ngFor ="let comentario of comentarios" >
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">{{comentario.titulo}}</h5>
-            <p class="card-text">{{comentario.texto}}</p>
-
-            <p class="card-text">{{comentario.calificacion}}</p>
-            <p class="card-text">{{comentario.nombre}}</p>
-
-
-
-          </div>
-        </div>
-    
-
-      </div>
-  </div>
+<div *ngIf="selected">
+  <app-comentario-detail [comentarioDetail]="selectedComentario"></app-comentario-detail>
 </div>
 
+<hr />
+
+<div class="container-fluid">
+<div class="row">
+ <div *ngFor="let comentario of comentarios" class="col mb-2">
+   <div class="card p-2" style="width: 15rem; height: 33rem">
+     
+     <div class="card-body">
+       <h5 class="card-title">{{ comentario.titulo }}</h5>
+       <p class="card-text">[{{ comentario.nombre}}]</p>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
