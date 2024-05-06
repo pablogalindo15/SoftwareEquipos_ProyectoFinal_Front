@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment.development'
 import { Observable } from 'rxjs';
 import { Propietario } from './propietario';
+import { PropietarioDetail } from './propietario-detail';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class PropietarioService {
   private apiUrl: string = environment.baseUrl + 'propietarios';
   constructor(private http: HttpClient) { }
 
-  getPropietarios(): Observable<Propietario[]> {
-    return this.http.get<Propietario[]>(this.apiUrl);
+  getPropietarios(): Observable<PropietarioDetail[]> {
+    return this.http.get<PropietarioDetail[]>(this.apiUrl);
   }
 }

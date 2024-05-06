@@ -1,3 +1,10 @@
+<div *ngIf="selected">
+  <app-propietario-detail [propietarioDetail]="selectedPropietario"></app-propietario-detail>
+ </div>
+ 
+ <hr />
+
+
 <div class="container-fluid">
     <div class="row">
   <p>propietario-list works!</p>
@@ -8,6 +15,7 @@
             class="card-img-top"
             src="{{ propietario.foto }}"
             alt="{{ propietario.nombre }}"
+            (click)="onSelected(propietario)"
           />
           <div class="card-body">
             <h5 class="card-title">{{ propietario.nombre }}</h5>
