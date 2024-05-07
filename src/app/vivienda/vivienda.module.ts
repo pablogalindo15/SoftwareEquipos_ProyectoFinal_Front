@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ViviendaListComponent } from './vivienda-list/vivienda-list.component';
 import { ViviendaDetailComponent } from './vivienda-detail/vivienda-detail.component';
+import { ViviendaRoutingModule } from './vivienda-routing.module';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { ViviendaDetailComponent } from './vivienda-detail/vivienda-detail.compo
     ViviendaDetailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ViviendaRoutingModule
   ],
   exports:[
     ViviendaListComponent,
