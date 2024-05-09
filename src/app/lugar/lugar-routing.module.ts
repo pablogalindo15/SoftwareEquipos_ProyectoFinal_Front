@@ -11,7 +11,7 @@ const rutas: Routes =[{
             component: LugarListComponent
         },
         {
-            path:'id',
+            path:':id',
             component: LugarDetailComponent
         },
     ]

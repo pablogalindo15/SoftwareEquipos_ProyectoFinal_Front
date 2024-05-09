@@ -14,5 +14,15 @@ export class LugarService {
     getLugares(): Observable<LugarDetail[]> {
         return this.http.get<LugarDetail[]>(this.apiUrl);
       }
+      getLugar(id: string): Observable<LugarDetail> {
+        return this.http.get<LugarDetail>(this.apiUrl + "/" + id);
+      }
+    
+      createLugar(lugar: Lugar): Observable<Lugar> {
+        return this.http.post<Lugar>(this.apiUrl, lugar);
+      }
+    
+
+    
 
 }
