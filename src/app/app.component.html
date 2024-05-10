@@ -1,13 +1,32 @@
-<a routerLink="/viviendas/list">Viviendas</a>
-<router-outlet></router-outlet>
 
-<a routerLink="/lugares/list">Lugares</a>
-<router-outlet></router-outlet>
 
-<!-- <app-vivienda-list></app-vivienda-list>
-
+<!-- <app-vivienda-list></app-vivienda-list>=
 <app-lugar-list></app-lugar-list> 
 <app-propietario-list></app-propietario-list>
 <app-habitante-list></app-habitante-list>
 <app-servicio-list></app-servicio-list>
 <app-comentario-list></app-comentario-list> -->
+
+
+
+
+
+<div class="container-fluid" id="principal">
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+
+</div>
+<footer class="page-footer">
+    <div class="footer-copyright text-center py-2">
+      VIVIENDA
+      <br>
+      <a routerLink="/servicios/list" id="colorFooterText2"> SERVICIOS</a><br>
+      <a routerLink="/lugares/list" id="colorFooterText2">Lugares</a><br>
+      <a routerLink="/viviendas/list" id="colorFooterText2">Viviendas</a>
+    </div>
+</footer>

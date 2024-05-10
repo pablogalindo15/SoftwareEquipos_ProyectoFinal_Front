@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicioListComponent } from './servicio-list/servicio-list.component';
 import { ServicioDetailComponent } from './servicio-detail/servicio-detail.component';
+import { RouterModule } from '@angular/router';
+import { ServicioRoutingModule } from './servicio-rounting.module';
 
 
 
@@ -10,10 +12,9 @@ import { ServicioDetailComponent } from './servicio-detail/servicio-detail.compo
     ServicioListComponent, ServicioDetailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule, RouterModule, ServicioRoutingModule
   ],
   exports: [
-    ServicioListComponent
-  ]
+    ServicioListComponent]
 })
 export class ServicioModule { }

@@ -40,6 +40,14 @@
         </div>
         <div class="col">
             <dl>
+                <dt>Servicios</dt>
+                <dd class="caption" *ngFor="let lugar of viviendaDetail.lugarDeInteres_cercano">
+                    <a [routerLink]="'/lugares/' + lugar.id">{{ lugar.nombre }}</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="col">
+            <dl>
                 <dt>Habitantes Actuales</dt>
                 <dd class="caption" *ngFor="let habitante of viviendaDetail.habitantes_actuales">
                     {{ habitante.nombre }}
