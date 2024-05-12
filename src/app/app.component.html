@@ -7,11 +7,30 @@
 <app-servicio-list></app-servicio-list>
 <app-comentario-list></app-comentario-list> -->
 
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0F4064; height: 80px;">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/viviendas/list" style="font-family:'Times New Roman', Times, serif, sans-serif; font-size: 30px;">Vive U</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/lugares/list">Lugares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/servicios/list">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/propietarios/list">Propietarios</a>
+          </li>
 
-
-
-
-<div class="container-fluid" id="principal">
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid" id="principal" style="background-color: #A8B3D0">
     <div class="row">
       <div class="col-md-12">
         <div>
@@ -19,14 +38,15 @@
         </div>
       </div>
     </div>
+  </div>
+  
+  <footer class="page-footer">
+    <div class="footer-copyright text-center py-2">
+      Desarrollado por TechAlpes
+      <br>
+    </div>
+  </footer>
+  
 
 </div>
-<footer class="page-footer">
-    <div class="footer-copyright text-center py-2">
-      VIVIENDA
-      <br>
-      <a routerLink="/servicios/list" id="colorFooterText2"> SERVICIOS</a><br>
-      <a routerLink="/lugares/list" id="colorFooterText2">Lugares</a><br>
-      <a routerLink="/viviendas/list" id="colorFooterText2">Viviendas</a>
-    </div>
-</footer>
+

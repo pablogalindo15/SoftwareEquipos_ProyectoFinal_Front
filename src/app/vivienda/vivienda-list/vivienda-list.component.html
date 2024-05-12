@@ -5,7 +5,7 @@
 <hr />
 
 <div class="container-fluid">
-  <p>vivienda-list works!</p>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <div class="row">
         <div class="col mb-2" *ngFor="let vivienda of viviendas">
             <div class="card p-2" style="width: 15rem; height: 33rem">
@@ -18,7 +18,18 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title">{{ vivienda.nombre }}</h5>
-                  <p class="card-text">[{{ vivienda.propietario.nombre }}]</p>     
+                  <p class="card-text">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    {{ vivienda.direccion }}
+                  </p>
+                  <p class="card-text">
+                    <i class="bi bi-person-circle"></i>
+                    {{ vivienda.propietario.nombre }}</p>   
+                  <p class="card-text">
+                    <i class="bi bi-coin"></i>
+                    {{ vivienda.precio }}
+                  </p>
+
                 </div>
               </div>
         </div>
