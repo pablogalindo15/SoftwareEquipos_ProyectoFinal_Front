@@ -11,23 +11,8 @@ import { LugarService } from '../lugar.service';
 export class LugarDetailComponent implements OnInit {
   lugarId!: string;
   @Input() lugarDetail!: LugarDetail; 
-  constructor(
-    private route: ActivatedRoute,
-    private lugarService: LugarService
-  ) {}
-
-  getLugar(){
-    this.lugarService.getLugar(this.lugarId).subscribe(apiData=>{
-      this.lugarDetail = apiData;
-    })
-  }
-
+  constructor() {}
   ngOnInit() {
-    if(this.lugarDetail === undefined){
-      this.lugarId = this.route.snapshot.paramMap.get('id')!
-      if (this.lugarId) {
-        this.getLugar();
-      }
-    }
   }
+
 }
