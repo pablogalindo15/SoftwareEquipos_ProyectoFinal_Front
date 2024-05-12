@@ -2,15 +2,10 @@ import { TestBed, ComponentFixture, async } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { LugarDetailComponent } from './lugar-detail.component';
-import { faker } from '@faker-js/faker'; // Importamos Faker
-import { LugarDetail } from '../lugar-detail';
-enum tipoLugar {
-  Universidad,
-  Restaurante,
-  Supermercado,
-  Parque,
-  CentroComercial
-}
+import { faker } from '@faker-js/faker'; 
+import { LugarDetail,TipoLugar } from '../lugar-detail';
+
+
 describe('LugarDetailComponent', () => {
   let component: LugarDetailComponent;
   let fixture: ComponentFixture<LugarDetailComponent>;
@@ -27,7 +22,6 @@ describe('LugarDetailComponent', () => {
     component = fixture.componentInstance;
     debugElement = fixture.debugElement;
 
-    // Generamos datos aleatorios con Faker
     const lugarDetail = new LugarDetail(
       faker.datatype.number(), // id
       faker.address.streetName(), // nombre
@@ -38,7 +32,7 @@ describe('LugarDetailComponent', () => {
       faker.datatype.number({ min: 100, max: 1000 }), // precioMax
       faker.datatype.number(), // coordenadaX
       faker.datatype.number(), // coordenadaY
-      tipoLugar.Restaurante // tipoLugar
+      TipoLugar.Restaurante // tipoLugar
     );
 
     component.lugarDetail = lugarDetail;

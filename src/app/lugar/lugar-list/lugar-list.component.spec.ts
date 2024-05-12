@@ -17,7 +17,6 @@ describe('LugarListComponent', () => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule],
       declarations: [LugarListComponent],
-      providers: [LugarService]
     })
       .compileComponents();
   }));
@@ -25,36 +24,12 @@ describe('LugarListComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(LugarListComponent);
     component = fixture.componentInstance;
-    
-    //fixture.detectChanges();
-  enum tipoLugar {
-    Universidad,
-    Restaurante,
-    Supermercado,
-    Parque,
-    CentroComercial
-  }
-  for (let i = 0; i < 10; i++) {
-    const lugar = new LugarDetail(
-
-      faker.number.int(),
-      faker.lorem.word(),
-      faker.image.url(),
-      faker.number.int(),
-      faker.datatype.boolean(),
-      faker.number.int(),
-      faker.number.int(),
-      faker.number.int(),
-      faker.number.int(),
-      tipoLugar.Restaurante 
-    );
-    component.lugares.push(lugar);
-  }
-  fixture.detectChanges();
-  debug = fixture.debugElement;
+    fixture.detectChanges();
+   
 });
 
 it('should create', () => {
   expect(component).toBeTruthy();
 });
 });
+

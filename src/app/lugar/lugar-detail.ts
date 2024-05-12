@@ -1,6 +1,6 @@
 import { Lugar } from './lugar';
 
-enum tipoLugar {
+export enum TipoLugar {
     Universidad,
     Restaurante,
     Supermercado,
@@ -20,9 +20,10 @@ export class LugarDetail extends Lugar {
         precioMax: number,
         coordenadaX: number,
         coordenadaY: number,
-        tipoLugar: tipoLugar
+        tipo: TipoLugar
     ) {
-        super(id, nombre, fotos, tiempoLLegada, gratis, precioMin, precioMax, coordenadaX, coordenadaY, tipoLugar);
+        super(id, nombre, fotos, tiempoLLegada, gratis, precioMin, precioMax, coordenadaX, coordenadaY, tipo);
     }
-}
+    
 
+}

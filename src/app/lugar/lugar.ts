@@ -1,4 +1,4 @@
-enum tipoLugar {Universidad, Restaurante, Supermercado, Parque, CentroComercial };
+enum TipoLugar {Universidad, Restaurante, Supermercado, Parque, CentroComercial };
 
 export class Lugar {
     id:number;
@@ -10,9 +10,9 @@ export class Lugar {
     precioMax: number;
     coordenadaX: number;
     coordenadaY: number;
-    tipoLugar: tipoLugar;
+    tipo: TipoLugar;
 
-    constructor(id: number, nombre: string, fotos: string, tiempoLlegada: number, gratis: boolean, precioMin: number, precioMax: number, coordenadaX: number, coordenadaY: number, tipoLugar: tipoLugar) {
+    constructor(id: number, nombre: string, fotos: string, tiempoLlegada: number, gratis: boolean, precioMin: number, precioMax: number, coordenadaX: number, coordenadaY: number, tipo: TipoLugar) {
         this.id=id;
         this.nombre = nombre;
         this.fotos = fotos;
@@ -22,6 +22,6 @@ export class Lugar {
         this.precioMax = precioMax;
         this.coordenadaX = coordenadaX;
         this.coordenadaY = coordenadaY;
-        this.tipoLugar = tipoLugar;
+        this.tipo =tipo;
     }
 }

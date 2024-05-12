@@ -1,23 +1,36 @@
-
 <div class="container-fluid">
   <p class="h3 p-3">{{ lugarDetail.nombre }}</p>
   <div class="row">
-    <div class="col-2">
+    <div class="col-md-6"> 
       <div class="thumb">
         <img
           class="img-fluid"
           src="{{ lugarDetail.fotos }}"
           alt="{{ lugarDetail.nombre }}"
+          style="max-width: 100%; height: auto;"
         />
       </div>
     </div>
-    <div class="col">
+    <div class="col-md-6"> 
       <dl>
-        <dt>Precio Min</dt>
+        <dt>Tiempo de llegada</dt>
+        <dd>{{ lugarDetail.tiempoLlegada }} minutos</dd>
+        <hr />
+        <dt>Gratis</dt>
+        <dd>{{ lugarDetail.gratis ? 'Sí' : 'No' }}</dd>
+        <hr />
+        <dt>Precio Mínimo</dt>
         <dd>{{ lugarDetail.precioMin }}</dd>
         <hr />
-        <dt>Precio Max</dt>
+        <dt>Precio Máximo</dt>
         <dd>{{ lugarDetail.precioMax }}</dd>
+        <hr />
+        <dt>Coordenadas</dt>
+        <dd>({{ lugarDetail.coordenadaX }}, {{ lugarDetail.coordenadaY }})</dd>
+        <hr />
+        <dt>Tipo de Lugar</dt>
+        <dd>{{ lugarDetail.tipo }}</dd>
+        <hr />
       </dl>
     </div>
   </div>
