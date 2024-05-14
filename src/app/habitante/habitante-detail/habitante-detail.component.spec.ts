@@ -29,7 +29,7 @@ describe('HabitanteDetailComponent', () => {
     fixture = TestBed.createComponent(HabitanteDetailComponent);
     component = fixture.componentInstance;
 
-    const habitanteDetail = new HabitanteDetail(
+     component.habitanteDetail = new HabitanteDetail(
       faker.datatype.number(),
       faker.internet.userName(),
       faker.datatype.string(),
@@ -48,6 +48,8 @@ describe('HabitanteDetailComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 
 
 });

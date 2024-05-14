@@ -2,14 +2,21 @@
     <p class = "h3 p-3">{{ habitanteDetail.nombre }}</p>
     <div class = "row">
 
-        <div class = "col-md-6">
-        <dl>
+
+        <div class="col">
+            <dl>
+              <dt>Viviendas</dt>
+              <dd class="caption" *ngFor="let vivienda of habitanteDetail.viviendas">
+                {{ vivienda.nombre }}
+               </dd>
             <dt>Nombre</dt>
             <dd>{{ habitanteDetail.nombre }}</dd>
             <hr>
             <dt>Cedula</dt>
             <dd>{{ habitanteDetail.cedula }}</dd>
             <hr>
+            
+
 
         </dl>
         </div>
