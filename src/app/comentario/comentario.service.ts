@@ -9,7 +9,7 @@ import { ComentarioDetail } from './comentario-detail';
  providedIn: 'root'
 })
 export class ComentarioService {
-    private apiUrl: string = environment.baseUrl + 'comentarios';
+    private apiUrl: string = environment.baseUrl + 'comentario';
     constructor(private http: HttpClient) { }
     getComentarios(): Observable<ComentarioDetail[]> {
         return this.http.get<ComentarioDetail[]>(this.apiUrl);
