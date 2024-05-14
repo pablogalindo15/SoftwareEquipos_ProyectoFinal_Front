@@ -26,18 +26,7 @@ describe('HabitanteListComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HabitanteListComponent);
-    component = fixture.componentInstance;1
-
-for (let i = 0; i < 10; i++) {
-  const habitante = new HabitanteDetail(
-    faker.number.int(),
-    faker.lorem.word(),
-    faker.lorem.word(),
-  );
-  component.habitantes.push(habitante);
-}
-
-
+    component = fixture.componentInstance;
     fixture.detectChanges();
     debug = fixture.debugElement;
   });

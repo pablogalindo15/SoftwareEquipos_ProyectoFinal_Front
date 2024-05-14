@@ -29,17 +29,17 @@ describe('HabitanteDetailComponent', () => {
     fixture = TestBed.createComponent(HabitanteDetailComponent);
     component = fixture.componentInstance;
 
- 
-      
-    component.habitanteDetail = new HabitanteDetail (
+    const habitanteDetail = new HabitanteDetail(
       faker.datatype.number(),
-      faker.name.fullName(),
+      faker.internet.userName(),
       faker.datatype.string(),
+      []
+      
     );
 
+    
     fixture.detectChanges();
     debug = fixture.debugElement;
-
   
   });
 
