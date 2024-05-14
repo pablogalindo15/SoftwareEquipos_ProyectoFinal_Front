@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Habitante } from '../habitante';
+import { HabitanteDetail } from '../habitante-detail';
 
 @Component({
   selector: 'app-habitante-detail',
@@ -8,7 +9,8 @@ import { Habitante } from '../habitante';
 })
 export class HabitanteDetailComponent implements OnInit{
 
-  @Input() habitanteDetail!: Habitante;
+  habitanteId!: string;
+  @Input() habitanteDetail!: HabitanteDetail;
 
   constructor() { }
 
