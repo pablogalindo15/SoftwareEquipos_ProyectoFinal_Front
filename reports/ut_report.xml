@@ -1,71 +1,71 @@
 <testExecutions version="1">
-  <file path="src/app/propietario/propietario.service.spec.ts">
-    <testCase name="PropietarioService should be created" duration="11"/>
-  </file>
-  <file path="src/app/habitante/habitante.service.spec.ts">
-    <testCase name="Service: Habitante should ..." duration="3"/>
-  </file>
   <file path="src/app/comentario/comentario.service.spec.ts">
-    <testCase name="Service: Comentario should ..." duration="2"/>
-  </file>
-  <file path="src/app/lugar/lugar-detail/lugar-detail.component.spec.ts">
-    <testCase name="LugarDetailComponent should have a p.h3.p-3 element with lugarDetail.nombre" duration="44"/>
-    <testCase name="LugarDetailComponent should create" duration="5"/>
-    <testCase name="LugarDetailComponent should have an image element with correct src and alt attributes" duration="4"/>
-  </file>
-  <file path="src/app/comentario/comentario-list/comentario-list.component.spec.ts">
-    <testCase name="ComentarioListComponent should create" duration="18"/>
-  </file>
-  <file path="src/app/vivienda/vivienda.service.spec.ts">
-    <testCase name="Service: Vivienda should ..." duration="3"/>
-  </file>
-  <file path="src/app/servicio/servicio.service.spec.ts">
-    <testCase name="Service: Servicio should ..." duration="2"/>
-  </file>
-  <file path="src/app/comentario/comentario-detail/comentario-detail.component.spec.ts">
-    <testCase name="ComentarioDetailComponent should have a p.h3.p-3 element with comentarioDetail.titulo" duration="10"/>
-    <testCase name="ComentarioDetailComponent should create" duration="4"/>
-  </file>
-  <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
-    <testCase name="PropietarioListComponent should create" duration="12"/>
-  </file>
-  <file path="src/app/servicio/servicio-list/servicio-list.component.spec.ts">
-    <testCase name="ServicioListComponent should create" duration="11"/>
-  </file>
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="38"/>
-    <testCase name="AppComponent should have as title 'mynewapp'" duration="7"/>
-  </file>
-  <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
-    <testCase name="LugarListComponent should create" duration="4"/>
+    <testCase name="Service: Comentario should ..." duration="17"/>
   </file>
   <file path="src/app/servicio/servicio-detail/servicio-detail.component.spec.ts">
-    <testCase name="ServicioDetailComponent should create" duration="8"/>
-    <testCase name="ServicioDetailComponent should have a p.h3.p-3 element with servicioDetail.nombre" duration="4"/>
+    <testCase name="ServicioDetailComponent should have a p.h3.p-3 element with servicioDetail.nombre" duration="68"/>
+    <testCase name="ServicioDetailComponent should create" duration="5"/>
   </file>
-  <file path="src/app/vivienda/vivienda-detail/vivienda-detail.component.spec.ts">
-    <testCase name="ViviendaDetailComponent should have an image element with correct src and alt attributes" duration="24"/>
-    <testCase name="ViviendaDetailComponent should create" duration="7"/>
-    <testCase name="ViviendaDetailComponent should have a p.h3.p-3 element with viviendaDetail.nombre" duration="10"/>
+  <file path="src/app/servicio/servicio-list/servicio-list.component.spec.ts">
+    <testCase name="ServicioListComponent should create" duration="39"/>
+  </file>
+  <file path="src/app/vivienda/vivienda.service.spec.ts">
+    <testCase name="Service: Vivienda should ..." duration="4"/>
+  </file>
+  <file path="src/app/habitante/habitante.service.spec.ts">
+    <testCase name="Service: Habitante should ..." duration="4"/>
   </file>
   <file path="src/app/habitante/habitante-list/habitante-list.component.spec.ts">
-    <testCase name="HabitanteListComponent should create" duration="5"/>
+    <testCase name="HabitanteListComponent should create" duration="15"/>
   </file>
-  <file path="src/app/vivienda/vivienda-create/vivienda-create.component.spec.ts">
-    <testCase name="ViviendaCreateComponent should create" duration="64"/>
-  </file>
-  <file path="src/app/habitante/habitante-detail/habitante-detail.component.spec.ts">
-    <testCase name="HabitanteDetailComponent should create" duration="6"/>
-  </file>
-  <file path="src/app/propietario/propietario-detail/propietario-detail.component.spec.ts">
-    <testCase name="PropietarioDetailComponent should have an img element with alt= propietarioDetail.nombre" duration="8"/>
-    <testCase name="PropietarioDetailComponent should have an img element with src= propietarioDetail.foto" duration="4"/>
-    <testCase name="PropietarioDetailComponent should have a p.h3.p-3 element with propietarioDetail.nombre" duration="3"/>
-    <testCase name="PropietarioDetailComponent should create" duration="2"/>
-    <testCase name="PropietarioDetailComponent should have one dd tag for component.propietarioDetail.Correo" duration="3"/>
-    <testCase name="PropietarioDetailComponent should have one dd tag for component.propietarioDetail.Celular" duration="2"/>
+  <file path="src/app/propietario/propietario.service.spec.ts">
+    <testCase name="PropietarioService should be created" duration="3"/>
   </file>
   <file path="src/app/vivienda/vivienda-list/vivienda-list.component.spec.ts">
-    <testCase name="ViviendaListComponent should create" duration="5"/>
+    <testCase name="ViviendaListComponent should create" duration="22"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="90"/>
+    <testCase name="AppComponent should have as title 'mynewapp'" duration="7"/>
+  </file>
+  <file path="src/app/propietario/propietario-detail/propietario-detail.component.spec.ts">
+    <testCase name="PropietarioDetailComponent should create" duration="13"/>
+    <testCase name="PropietarioDetailComponent should have a p.h3.p-3 element with propietarioDetail.nombre" duration="5"/>
+    <testCase name="PropietarioDetailComponent should have an img element with src= propietarioDetail.foto" duration="6"/>
+    <testCase name="PropietarioDetailComponent should have an img element with alt= propietarioDetail.nombre" duration="5"/>
+    <testCase name="PropietarioDetailComponent should have one dd tag for component.propietarioDetail.Correo" duration="4"/>
+    <testCase name="PropietarioDetailComponent should have one dd tag for component.propietarioDetail.Celular" duration="6"/>
+  </file>
+  <file path="src/app/propietario/propietario-list/propietario-list.component.spec.ts">
+    <testCase name="PropietarioListComponent should create" duration="5"/>
+  </file>
+  <file path="src/app/comentario/comentario-list/comentario-list.component.spec.ts">
+    <testCase name="ComentarioListComponent should create" duration="8"/>
+  </file>
+  <file path="src/app/lugar/lugar-detail/lugar-detail.component.spec.ts">
+    <testCase name="LugarDetailComponent should create" duration="19"/>
+    <testCase name="LugarDetailComponent should have a p.h3.p-3 element with lugarDetail.nombre" duration="6"/>
+    <testCase name="LugarDetailComponent should have an image element with correct src and alt attributes" duration="4"/>
+  </file>
+  <file path="src/app/comentario/comentario-detail/comentario-detail.component.spec.ts">
+    <testCase name="ComentarioDetailComponent should create" duration="10"/>
+    <testCase name="ComentarioDetailComponent should have a p.h3.p-3 element with comentarioDetail.titulo" duration="6"/>
+  </file>
+  <file path="src/app/lugar/lugar-list/lugar-list.component.spec.ts">
+    <testCase name="LugarListComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/servicio/servicio.service.spec.ts">
+    <testCase name="Service: Servicio should ..." duration="3"/>
+  </file>
+  <file path="src/app/habitante/habitante-detail/habitante-detail.component.spec.ts">
+    <testCase name="HabitanteDetailComponent should create" duration="11"/>
+  </file>
+  <file path="src/app/vivienda/vivienda-create/vivienda-create.component.spec.ts">
+    <testCase name="ViviendaCreateComponent should create" duration="76"/>
+  </file>
+  <file path="src/app/vivienda/vivienda-detail/vivienda-detail.component.spec.ts">
+    <testCase name="ViviendaDetailComponent should create" duration="26"/>
+    <testCase name="ViviendaDetailComponent should have an image element with correct src and alt attributes" duration="9"/>
+    <testCase name="ViviendaDetailComponent should have a p.h3.p-3 element with viviendaDetail.nombre" duration="7"/>
   </file>
 </testExecutions>
