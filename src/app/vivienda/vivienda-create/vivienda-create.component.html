@@ -1,0 +1,193 @@
+<div class="container mt-4">
+    <h2 class="text-center">Crear una nueva vivienda</h2>
+    <form [formGroup]="viviendaForm" (ngSubmit)="createVivienda(viviendaForm.value)">
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="nombre">Nombre</label>
+        <input
+          id="nombre"
+          class="form-control"
+          formControlName="nombre"
+          placeholder="Nombre de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('nombre')?.hasError('required') && viviendaForm.get('nombre')?.touched">
+        Nombre requerido
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="precio">Precio</label>
+        <input
+          id="precio"
+          type="number"
+          class="form-control"
+          formControlName="precio"
+          placeholder="Precio de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('precio')?.hasError('required') && viviendaForm.get('precio')?.touched">
+        Precio requerido
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="descripcion">Descripción</label>
+        <input
+          id="descripcion"
+          type="text"
+          class="form-control"
+          formControlName="descripcion"
+          placeholder="Descripción de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('descripcion')?.hasError('required') && viviendaForm.get('descripcion')?.touched">
+        Descripción requerida
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="fotos">Fotos (URL)</label>
+        <input
+          id="fotos"
+          type="url"
+          class="form-control"
+          formControlName="fotos"
+          placeholder="URL de las fotos de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('fotos')?.hasError('required') && viviendaForm.get('fotos')?.touched">
+        Fotos requeridas
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="tamano">Tamaño</label>
+        <input
+          id="tamano"
+          type="number"
+          class="form-control"
+          formControlName="tamano"
+          placeholder="Tamaño de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('tamano')?.hasError('required') && viviendaForm.get('tamano')?.touched">
+        Tamaño requerido
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="estrato">Estrato</label>
+        <select class="form-control" id="estrato" formControlName="estrato">
+          <option value="">Selecciona el estrato</option>
+          <option *ngFor="let estrato of [1, 2, 3, 4, 5, 6]" [value]="estrato">{{ estrato }}</option>
+        </select>
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('estrato')?.hasError('required') && viviendaForm.get('estrato')?.touched">
+        Estrato requerido
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="restricciones">Restricciones</label>
+        <input
+          id="restricciones"
+          type="text"
+          class="form-control"
+          formControlName="restricciones"
+          placeholder="Restricciones de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('restricciones')?.hasError('required') && viviendaForm.get('restricciones')?.touched">
+        Restricciones requeridas
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="tipo">Tipo</label>
+        <select class="form-control" id="tipo" formControlName="tipo">
+          <option value="">Selecciona el tipo</option>
+          <option *ngFor="let tipo of ['apartaestudio', 'apartamentoComp', 'habitacionEnApto', 'habitacionFamilia']" [value]="tipo">{{ tipo }}</option>
+        </select>
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('tipo')?.hasError('required') && viviendaForm.get('tipo')?.touched">
+        Tipo requerido
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="contacto">Contacto</label>
+        <input
+          id="contacto"
+          type="text"
+          class="form-control"
+          formControlName="contacto"
+          placeholder="Contacto de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('contacto')?.hasError('required') && viviendaForm.get('contacto')?.touched">
+        Contacto requerido
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="direccion">Dirección</label>
+        <input
+          id="direccion"
+          type="text"
+          class="form-control"
+          formControlName="direccion"
+          placeholder="Dirección de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('direccion')?.hasError('required') && viviendaForm.get('direccion')?.touched">
+        Dirección requerida
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="ocupada">Ocupada</label>
+        <select class="form-control" id="ocupada" formControlName="ocupada">
+          <option value="">Selecciona si está ocupada</option>
+          <option [value]="true">Sí</option>
+          <option [value]="false">No</option>
+        </select>
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('ocupada')?.hasError('required') && viviendaForm.get('ocupada')?.touched">
+        Información de ocupación requerida
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="coordX">Coordenada X</label>
+        <input
+          id="coordX"
+          type="number"
+          class="form-control"
+          formControlName="coordX"
+          placeholder="Coordenada X de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('coordX')?.hasError('required') && viviendaForm.get('coordX')?.touched">
+        Coordenada X requerida
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="coordY">Coordenada Y</label>
+        <input
+          id="coordY"
+          type="number"
+          class="form-control"
+          formControlName="coordY"
+          placeholder="Coordenada Y de la vivienda"
+        />
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('coordY')?.hasError('required') && viviendaForm.get('coordY')?.touched">
+        Coordenada Y requerida
+      </div>
+  
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="propietario">Propietario</label>
+        <select class="form-control" id="propietario" formControlName="propietario">
+          <option value="">Selecciona el propietario</option>
+          <option [ngValue]="propietario" *ngFor="let propietario of propietarios">{{ propietario.nombre }}</option>
+        </select>
+      </div>
+      <div class="alert alert-danger" *ngIf="viviendaForm.get('propietario')?.hasError('required') && viviendaForm.get('propietario')?.touched">
+        Propietario requerido
+      </div>
+   
+     
+      <button type="submit" class="btn btn-primary" [disabled]="viviendaForm.invalid">Crear</button>
+      <button type="button" class="btn btn-danger ml-3" (click)="cancelCreation()">Cancelar</button>
+    </form>
+  </div>
+  

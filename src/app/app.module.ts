@@ -9,6 +9,8 @@ import { LugarModule } from './lugar/lugar.module';
 import { PropietarioModule } from './propietario/propietario.module';
 import { HabitanteModule } from './habitante/habitante.module';
 import { ComentarioModule } from './comentario/comentario.module';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -25,6 +27,15 @@ import { ComentarioModule } from './comentario/comentario.module';
     LugarModule,
     ComentarioModule,
     HabitanteModule,
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+      }
+    ),
+    BrowserAnimationsModule
+
+    
   ],
   providers: [
     provideClientHydration()

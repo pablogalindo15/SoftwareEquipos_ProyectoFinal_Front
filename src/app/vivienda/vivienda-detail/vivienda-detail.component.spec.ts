@@ -8,6 +8,9 @@ import { faker } from '@faker-js/faker';
 import { ViviendaDetailComponent } from './vivienda-detail.component';
 import { ViviendaDetail, tipoVivienda, posiblesEstratos } from '../vivienda-detail';
 import { Propietario } from  '../../propietario/propietario';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { ViviendaService } from '../vivienda.service';
 
 describe('ViviendaDetailComponent', () => {
   let component: ViviendaDetailComponent;
@@ -16,8 +19,18 @@ describe('ViviendaDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule, RouterTestingModule],
-      declarations: [ ViviendaDetailComponent ]
+      imports: [
+        RouterTestingModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        ToastrModule.forRoot({
+          timeOut: 10000,
+          positionClass: 'toast-bottom-right',
+          preventDuplicates: true,
+        }),
+      ],
+      declarations: [ ViviendaDetailComponent ],
+      providers: [ViviendaService]
     })
     .compileComponents();
   }));
