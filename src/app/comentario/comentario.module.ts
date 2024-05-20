@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ComentarioListComponent } from './comentario-list/comentario-list.component';
 import { ComentarioDetailComponent } from './comentario-detail/comentario-detail.component';
+import { RouterModule } from '@angular/router';
+import { ComentarioRoutingModule } from './comentario-routing.module';
 
 
 @NgModule({
@@ -10,7 +12,7 @@ import { ComentarioDetailComponent } from './comentario-detail/comentario-detail
     ComentarioDetailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,RouterModule,ComentarioRoutingModule
   ],
   exports:[ComentarioListComponent, ComentarioDetailComponent]
 })
