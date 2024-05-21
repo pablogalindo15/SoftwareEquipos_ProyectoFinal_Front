@@ -1,9 +1,8 @@
 import { Component, Inject, Renderer2, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { LugarService } from '../../lugar/lugar.service';
-import { LugarDetail } from '../../lugar/lugar-detail';
-import { ViviendaService } from '../vivienda.service';
-import { ViviendaDetail } from '../vivienda-detail';
+import { LugarService } from '../lugar.service';
+import { LugarDetail } from '../lugar-detail';
+
 
 declare const google: {
   maps: {
@@ -14,17 +13,17 @@ declare const google: {
 };
 
 @Component({
-  selector: 'app-mapa',
-  templateUrl: './mapa.component.html',
-  styleUrls: ['./mapa.component.css'] 
+  selector: 'app-mapa-lugar',
+  templateUrl: './mapa-lugar.component.html',
+  styleUrls: ['./mapa-lugar.component.css'] 
 })
-export class MapaComponent implements OnInit {
+export class MapaComponentLugar implements OnInit {
  
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private renderer2: Renderer2,
     private lugarService: LugarService,
-    private viviendaService: ViviendaService
+   
   ) { }
 
   ngOnInit() {
@@ -36,8 +35,8 @@ export class MapaComponent implements OnInit {
 
   private loadMap() {
     const map = new google.maps.Map(document.getElementById('map'), {
-      center: { lat: 0, lng: 0 },
-      zoom: 2,
+      center: { lat: 4.60971, lng: -74.08175 }, // Coordenadas de Bogotá
+    zoom: 12,
     });
 
     this.addMarkers(map);
@@ -45,27 +44,26 @@ export class MapaComponent implements OnInit {
 
   private addMarkers(map: any) {
     
-  
-    
-    this.viviendaService.getViviendas().subscribe((viviendas: ViviendaDetail[]) => {
-      viviendas.forEach(vivienda => {
+    this.lugarService.getLugares().subscribe((lugares: LugarDetail[]) => {
+      lugares.forEach(lugar => {
         const marker = new google.maps.Marker({
-          position: { lat: vivienda.coordX, lng: vivienda.coordY },
+          position: { lat: lugar.coordenadaX, lng: lugar.coordenadaY },
           map: map,
-          title: vivienda.nombre, 
+          title: lugar.nombre 
         });
   
         
         const infoWindow = new google.maps.InfoWindow({
-          content: vivienda.nombre
+          content: lugar.nombre
         });
   
-        
+       
         marker.addListener('click', () => {
           infoWindow.open(map, marker);
         });
       });
     });
+  
   }
   
 

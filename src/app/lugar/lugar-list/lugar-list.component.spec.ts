@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LugarService } from '../lugar.service';
 import { faker } from '@faker-js/faker';
 import { LugarDetail } from '../lugar-detail';
+import { MapaComponentLugar } from '../mapa-lugar/mapa-lugar.component';
 
 describe('LugarListComponent', () => {
   let component: LugarListComponent;
@@ -16,7 +17,7 @@ describe('LugarListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule],
-      declarations: [LugarListComponent],
+      declarations: [LugarListComponent, MapaComponentLugar],
     })
       .compileComponents();
   }));

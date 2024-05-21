@@ -5,16 +5,18 @@ import { LugarDetailComponent } from './lugar-detail/lugar-detail.component';
 import { RouterModule } from '@angular/router';
 import {LugarRoutingModule} from './lugar-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MapaComponentLugar } from './mapa-lugar/mapa-lugar.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
   declarations: [
     LugarListComponent,
-    LugarDetailComponent
+    LugarDetailComponent,MapaComponentLugar
   ],
   imports: [
-    CommonModule, RouterModule, LugarRoutingModule, HttpClientModule
+    CommonModule, RouterModule, LugarRoutingModule, HttpClientModule,GoogleMapsModule
   ],
-  exports:[LugarListComponent, LugarDetailComponent]
+  exports:[LugarListComponent, LugarDetailComponent,MapaComponentLugar]
 })
 export class LugarModule { }
