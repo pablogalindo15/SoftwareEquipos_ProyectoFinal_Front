@@ -4,6 +4,7 @@ import { DebugElement } from '@angular/core';
 import { LugarDetailComponent } from './lugar-detail.component';
 import { faker } from '@faker-js/faker'; 
 import { LugarDetail,TipoLugar } from '../lugar-detail';
+import { HttpClientModule } from '@angular/common/http';
 
 
 describe('LugarDetailComponent', () => {
@@ -13,7 +14,8 @@ describe('LugarDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [LugarDetailComponent]
+      declarations: [LugarDetailComponent],
+      imports:[HttpClientModule]
     }).compileComponents();
   }));
 

@@ -4,6 +4,7 @@ import { LugarListComponent } from './lugar-list/lugar-list.component';
 import { LugarDetailComponent } from './lugar-detail/lugar-detail.component';
 import { RouterModule } from '@angular/router';
 import {LugarRoutingModule} from './lugar-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -12,7 +13,7 @@ import {LugarRoutingModule} from './lugar-routing.module';
     LugarDetailComponent
   ],
   imports: [
-    CommonModule, RouterModule, LugarRoutingModule
+    CommonModule, RouterModule, LugarRoutingModule, HttpClientModule
   ],
   exports:[LugarListComponent, LugarDetailComponent]
 })

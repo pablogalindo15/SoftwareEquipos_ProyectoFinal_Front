@@ -13,17 +13,18 @@ import { HttpClientModule } from '@angular/common/http';
     ViviendaListComponent,
     ViviendaDetailComponent,
     ViviendaCreateComponent
-  ],
+    ],
   imports: [
     CommonModule,
     ViviendaRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   exports:[
     ViviendaListComponent,
     ViviendaDetailComponent,
-    ViviendaCreateComponent
+    ViviendaCreateComponent,
   ]
 })
 export class ViviendaModule { }
