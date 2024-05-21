@@ -7,6 +7,7 @@ import { ViviendaListComponent } from './vivienda-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Propietario } from '../../propietario/propietario';
 import { ViviendaDetail } from '../vivienda-detail';
+import { MapaComponent } from '../mapa/mapa.component';
 
 describe('ViviendaListComponent', () => {
   let component: ViviendaListComponent;
@@ -15,7 +16,7 @@ describe('ViviendaListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule],
-      declarations: [ ViviendaListComponent ]
+      declarations: [ ViviendaListComponent, MapaComponent ]
     })
     .compileComponents();
   }));

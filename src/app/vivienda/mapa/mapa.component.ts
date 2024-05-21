@@ -1,9 +1,9 @@
 import { Component, Inject, Renderer2, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { LugarService } from '../lugar/lugar.service';
-import { LugarDetail } from '../lugar/lugar-detail';
-import { ViviendaService } from '../vivienda/vivienda.service';
-import { ViviendaDetail } from '../vivienda/vivienda-detail';
+import { LugarService } from '../../lugar/lugar.service';
+import { LugarDetail } from '../../lugar/lugar-detail';
+import { ViviendaService } from '../vivienda.service';
+import { ViviendaDetail } from '../vivienda-detail';
 
 declare const google: {
   maps: {

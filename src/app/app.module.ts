@@ -11,13 +11,11 @@ import { HabitanteModule } from './habitante/habitante.module';
 import { ComentarioModule } from './comentario/comentario.module';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { GoogleMapsModule } from '@angular/google-maps';
-import { MapaComponent } from './mapa/mapa.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, MapaComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +33,7 @@ import { MapaComponent } from './mapa/mapa.component';
       preventDuplicates: true,
       }
     ),
-    BrowserAnimationsModule, GoogleMapsModule
+    BrowserAnimationsModule
 
     
   ],

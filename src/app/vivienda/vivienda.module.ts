@@ -6,25 +6,30 @@ import { ViviendaRoutingModule } from './vivienda-routing.module';
 import { ViviendaCreateComponent } from './vivienda-create/vivienda-create.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MapaComponent } from './mapa/mapa.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
   declarations: [
     ViviendaListComponent,
     ViviendaDetailComponent,
-    ViviendaCreateComponent
+    ViviendaCreateComponent,
+    MapaComponent
     ],
   imports: [
     CommonModule,
     ViviendaRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    GoogleMapsModule
     
   ],
   exports:[
     ViviendaListComponent,
     ViviendaDetailComponent,
     ViviendaCreateComponent,
+    MapaComponent
   ]
 })
 export class ViviendaModule { }
