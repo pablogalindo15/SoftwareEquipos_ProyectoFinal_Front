@@ -5,6 +5,9 @@ import { LugarDetailComponent } from './lugar-detail.component';
 import { faker } from '@faker-js/faker'; 
 import { LugarDetail,TipoLugar } from '../lugar-detail';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterTestingModule } from '@angular/router/testing';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LugarService } from '../lugar.service';
 
 
 describe('LugarDetailComponent', () => {
@@ -15,7 +18,9 @@ describe('LugarDetailComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [LugarDetailComponent],
-      imports:[HttpClientModule]
+      imports:[HttpClientModule, RouterTestingModule,
+        ReactiveFormsModule,]
+        ,providers: [LugarService]
     }).compileComponents();
   }));
 
