@@ -5,12 +5,12 @@ enum tipoServicio {parqueadero, gimansio, lavanderia, deposito, restaurante};
 export class ServicioDetail extends Servicio {
 
     constructor(
-      
+        id: number,
         nombre: string,
         costoAdicional: number,
         tipoServicio: tipoServicio
     ) {
-        super(nombre, costoAdicional, tipoServicio);
+        super(id, nombre, costoAdicional, tipoServicio);
     }
        
 }

@@ -25,6 +25,7 @@ describe('ServicioDetailComponent', () => {
     debugElement = fixture.debugElement;
 
     const servicioDetail = new ServicioDetail(
+      faker.number.int(),
       faker.lorem.word(),
       faker.number.int(),
       tipoServicio.restaurante

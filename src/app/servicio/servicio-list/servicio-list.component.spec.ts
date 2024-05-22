@@ -30,7 +30,7 @@ describe('ServicioListComponent', () => {
 
     for (let i = 0; i < 10; i++) {
       const servicio = new Servicio(
-
+        faker.number.int(),
         faker.lorem.word(),
         faker.number.int(),
         tipoServicio.restaurante
