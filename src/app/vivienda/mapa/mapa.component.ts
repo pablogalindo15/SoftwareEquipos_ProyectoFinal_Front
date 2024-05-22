@@ -36,13 +36,13 @@ export class MapaComponent implements OnInit {
 
   private loadMap() {
     const map = new google.maps.Map(document.getElementById('map'), {
-      center: { lat: 0, lng: 0 },
-      zoom: 2,
+      center: { lat: 4.60971, lng: -74.08175 }, // Coordenadas de Bogotá
+    zoom: 12,
     });
 
     this.addMarkers(map);
   }
-
+  
   private addMarkers(map: any) {
     
   
