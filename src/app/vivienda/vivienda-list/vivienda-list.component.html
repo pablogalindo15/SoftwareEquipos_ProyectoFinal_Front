@@ -11,7 +11,7 @@
     <div class="col-md-3">
       <div class="card p-3 mb-3">
         <h5 class="card-title">Filters</h5>
-        <!-- Dropdown for selecting estrato -->
+
         <div class="mb-3">
           <label for="estratoSelect" class="form-label">Select Estrato</label>
           <select id="estratoSelect" class="form-select" [(ngModel)]="selectedEstrato" (change)="filterViviendas()">
@@ -20,21 +20,21 @@
           </select>
         </div>
 
-        <!-- Range input for selecting tamano -->
+
         <div class="mb-3">
           <label for="tamanoRange" class="form-label">Select Tamano Range</label>
           <input type="range" id="tamanoRange" class="form-range" min="100" max="10000" [(ngModel)]="selectedTamano" (change)="filterViviendas()">
           <span>{{ selectedTamano }}</span>
         </div>
 
-        <!-- Range input for selecting precio -->
+
         <div class="mb-3">
           <label for="precioRange" class="form-label">Select Precio Range</label>
           <input type="range" id="precioRange" class="form-range" min="0" max="1000000" step="100000" [(ngModel)]="selectedPrecio" (change)="filterViviendas()">
           <span>{{ selectedPrecio }}</span>
         </div>
 
-        <!-- Dropdown for selecting tipo -->
+
         <div class="mb-3">
           <label for="tipoSelect" class="form-label">Select Tipo</label>
           <select id="tipoSelect" class="form-select" [(ngModel)]="selectedTipo" (change)="filterViviendas()">
@@ -43,7 +43,7 @@
           </select>
         </div>
 
-        <!-- Reset button -->
+
         <div class="mb-3">
           <button class="btn btn-primary w-100" (click)="resetFilters()">Reset Filters</button>
         </div>
