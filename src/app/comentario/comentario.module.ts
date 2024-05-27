@@ -15,6 +15,6 @@ import {NgxPaginationModule} from 'ngx-pagination';
   imports: [
     CommonModule,RouterModule,ComentarioRoutingModule,NgxPaginationModule
   ],
-  exports:[ComentarioListComponent, ComentarioDetailComponent]
+  exports:[ComentarioListComponent, ComentarioDetailComponent,NgxPaginationModule]
 })
 export class ComentarioModule{ }
