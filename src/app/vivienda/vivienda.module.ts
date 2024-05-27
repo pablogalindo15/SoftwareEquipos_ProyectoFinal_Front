@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MapaComponent } from './mapa/mapa.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
     ViviendaRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    FormsModule
     
   ],
   exports:[

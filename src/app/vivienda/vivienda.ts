@@ -1,49 +1,57 @@
 import { Propietario } from "../propietario/propietario";
 
-enum posiblesEstratos{
-    uno,  dos, tres, cuatro, cinco, seis
+export enum posiblesEstratos {
+    uno = 'uno',
+    dos = 'dos',
+    tres = 'tres',
+    cuatro = 'cuatro',
+    cinco = 'cinco',
+    seis = 'seis'
 };
 
-enum tipoVivienda{
-    apartaestudio, apartamentoComp, habitaconEnApto, habitacionFamilia
+export enum tipoVivienda {
+    apartaestudio = 'apartaestudio',
+    apartamentoComp = 'apartamentoComp',
+    habitaconEnApto = 'habitaconEnApto',
+    habitacionFamilia = 'habitacionFamilia'
 };
-
 
 export class Vivienda {
-    id:number;
+    id: number;
     nombre: string;
     precio: number;
     descripcion: string;
     fotos: string;
     tamano: number;
-    estrato:posiblesEstratos;
+    estrato: posiblesEstratos;
     restricciones: string;
-    tipo:tipoVivienda;
-    contacto:string;
+    tipo: tipoVivienda;
+    contacto: string;
     direccion: string;
     ocupada: boolean;
-    coordX:number;
+    coordX: number;
     coordY: number;
     propietario: Propietario;
+
     constructor(
-        id:number,
+        id: number,
         nombre: string,
         precio: number,
         descripcion: string,
         fotos: string,
         tamano: number,
-        estrato:posiblesEstratos,
+        estrato: posiblesEstratos,
         restricciones: string,
-        tipo:tipoVivienda,
-        contacto:string,
+        tipo: tipoVivienda,
+        contacto: string,
         direccion: string,
         ocupada: boolean,
-        coordX:number,
+        coordX: number,
         coordY: number,
         propietario: Propietario
-    ){
+    ) {
         this.id = id;
-        this.nombre=nombre;
+        this.nombre = nombre;
         this.precio = precio;
         this.descripcion = descripcion;
         this.fotos = fotos;
@@ -56,7 +64,6 @@ export class Vivienda {
         this.ocupada = ocupada;
         this.coordX = coordX;
         this.coordY = coordY;
-        this.propietario = propietario
+        this.propietario = propietario;
     }
-
 }
