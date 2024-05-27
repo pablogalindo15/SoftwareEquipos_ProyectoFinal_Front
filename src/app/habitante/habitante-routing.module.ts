@@ -7,18 +7,14 @@ import { HabitanteDetailComponent } from './habitante-detail/habitante-detail.co
 const routes: Routes = [
   {
     path: 'habitantes',
-    children: [
-      {
-        path: 'list',
-        component: HabitanteListComponent
-      },
-      {
-        path: ':id',
-        component: HabitanteDetailComponent
-      }
-    ]
+    component: HabitanteListComponent
+  },
+  {
+    path:  ':id',
+    component: HabitanteDetailComponent
   }
-];1
+
+];
   
 
 @NgModule({

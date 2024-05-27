@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Habitante } from '../habitante';
 import { HabitanteDetail } from '../habitante-detail';
+import { HabitanteService } from '../habitante.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-habitante-detail',
@@ -12,9 +14,20 @@ export class HabitanteDetailComponent implements OnInit{
   habitanteId!: string;
   @Input() habitanteDetail!: HabitanteDetail;
 
-  constructor() { }
+  constructor(
+    private habitanteService: HabitanteService,
+    private route: ActivatedRoute
 
-  ngOnInit(): void {
+  ) { }
+
+  getHabitante(){
+    this.habitanteService.getHabitante(this.habitanteId).subscribe(habitante => this.habitanteDetail = habitante);
+
+
   }
 
-}
+  ngOnInit(){
+  
+      }
+  }
+
