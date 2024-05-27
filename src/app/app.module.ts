@@ -11,6 +11,7 @@ import { HabitanteModule } from './habitante/habitante.module';
 import { ComentarioModule } from './comentario/comentario.module';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgxPaginationModule} from 'ngx-pagination'; 
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       preventDuplicates: true,
       }
     ),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,NgxPaginationModule
 
     
   ],

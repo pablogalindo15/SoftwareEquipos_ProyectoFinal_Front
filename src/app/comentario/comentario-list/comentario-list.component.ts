@@ -14,7 +14,7 @@ export class ComentarioListComponent implements OnInit {
   comentarios : Array<Comentario> = [];
   selected :Boolean = false;
   selectedComentario!: ComentarioDetail;
-
+  public p!: number;
   constructor(private comentarioService:ComentarioService) { }
   getComentarios(): void{
     this.comentarioService.getComentarios().subscribe((comentarios)=>{

@@ -4,6 +4,7 @@ import { ComentarioListComponent } from './comentario-list/comentario-list.compo
 import { ComentarioDetailComponent } from './comentario-detail/comentario-detail.component';
 import { RouterModule } from '@angular/router';
 import { ComentarioRoutingModule } from './comentario-routing.module';
+import {NgxPaginationModule} from 'ngx-pagination'; 
 
 
 @NgModule({
@@ -12,7 +13,7 @@ import { ComentarioRoutingModule } from './comentario-routing.module';
     ComentarioDetailComponent
   ],
   imports: [
-    CommonModule,RouterModule,ComentarioRoutingModule
+    CommonModule,RouterModule,ComentarioRoutingModule,NgxPaginationModule
   ],
   exports:[ComentarioListComponent, ComentarioDetailComponent]
 })

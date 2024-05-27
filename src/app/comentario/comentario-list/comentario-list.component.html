@@ -8,7 +8,7 @@
 
 <div class="container-fluid">
 <div class="row">
- <div *ngFor="let comentario of comentarios" class="col mb-2">
+ <div *ngFor="let comentario of comentarios | paginate: { itemsPerPage: 10, currentPage: p }"  class="col mb-2">
    <div class="card p-2" style="width: 15rem; height: 33rem">
      
      <div class="card-body">
@@ -19,3 +19,4 @@
  </div>
 </div>
 </div> 
+<pagination-controls (pageChange)="p = $event" previousLabel="Previous" nextLabel="Next"></pagination-controls>
