@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ComentarioService } from '../comentario.service';
 import { faker } from '@faker-js/faker';
 import { ComentarioDetail } from '../comentario-detail';
+import {NgxPaginationModule} from 'ngx-pagination'; 
 
 describe('ComentarioListComponent', () => {
   let component: ComentarioListComponent;
@@ -15,7 +16,7 @@ describe('ComentarioListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
+      imports: [HttpClientModule,NgxPaginationModule],
       declarations: [ComentarioListComponent],
       providers: [ComentarioService]
     })
