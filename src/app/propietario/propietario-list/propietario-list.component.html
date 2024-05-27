@@ -1,24 +1,36 @@
 <div *ngIf="selected">
   <app-propietario-detail [propietarioDetail]="selectedPropietario"></app-propietario-detail>
- </div>
- 
- <hr />
+</div>
 
+<hr />
 
 <div class="container-fluid">
-    <div class="row">
-      <div class="col mb-2" *ngFor="let propietario of propietarios">
-        <div class="card p-2" style="width: 15rem; height: 33rem">
-          <img
-            class="card-img-top"
-            src="{{ propietario.foto }}"
-            alt="{{ propietario.nombre }}"
-            (click)="onSelected(propietario)"
-          />
-          <div class="card-body">
-            <h5 class="card-title">{{ propietario.nombre }}</h5>
-          </div>
+  <div class="row">
+    <div class="col mb-2" *ngFor="let propietario of propietarios">
+      <div class="card p-2" style="width: 15rem; height: 33rem">
+        <img
+          class="card-img-top"
+          src="{{ propietario.foto }}"
+          alt="{{ propietario.nombre }}"
+          (click)="onSelected(propietario)"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ propietario.nombre }}</h5>
         </div>
       </div>
     </div>
   </div>
+  <!-- Botón para registrar propietario -->
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary" (click)="mostrarFormulario = !mostrarFormulario">
+        Registrar Propietario
+      </button>
+    </div>
+  </div>
+  <div *ngIf="mostrarFormulario" class="row mt-3">
+    <div class="col">
+      <app-create-propietario (propietarioCreado)="agregarPropietario($event)"></app-create-propietario>
+    </div>
+  </div>
+</div>

@@ -16,4 +16,8 @@ export class PropietarioService {
   getPropietarios(): Observable<PropietarioDetail[]> {
     return this.http.get<PropietarioDetail[]>(this.apiUrl);
   }
+
+  createPropietario(propietario: PropietarioDetail): Observable<PropietarioDetail> {
+    return this.http.post<PropietarioDetail>(this.apiUrl, propietario);
+  }
 }
