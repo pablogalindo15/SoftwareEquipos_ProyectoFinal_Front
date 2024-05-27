@@ -34,3 +34,5 @@ export class ViviendaDetail extends Vivienda {
         this.historial = historial;
     }
 }
+
+export { tipoVivienda, posiblesEstratos };

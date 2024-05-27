@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 import { Vivienda, tipoVivienda, posiblesEstratos } from '../vivienda'; // Import tipoVivienda and posiblesEstratos
 import { ViviendaService } from '../vivienda.service';
 import { ViviendaDetail } from '../vivienda-detail';
@@ -18,7 +20,7 @@ export class ViviendaListComponent implements OnInit {
   tipos = Object.values(tipoVivienda); // Get enum values as array
   estratos = Object.values(posiblesEstratos); // Get enum values as array
 
-  selectedTamano: number = 100; // Initialize with minimum value
+  selectedTamano: number = 0; // Initialize with minimum value
   selectedPrecio: number = 0; // Initialize with minimum value
   selectedTipo: tipoVivienda | '' = ''; // Initialize with empty string
   selectedEstrato: posiblesEstratos | '' = ''; // Initialize with empty string
@@ -53,7 +55,7 @@ export class ViviendaListComponent implements OnInit {
   }
 
   resetFilters(): void {
-    this.selectedTamano = 100;
+    this.selectedTamano = 0;
     this.selectedPrecio = 0;
     this.selectedTipo = '';
     this.selectedEstrato = '';

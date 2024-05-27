@@ -4,6 +4,7 @@ import { PropietarioListComponent } from './propietario-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PropietarioDetail } from '../propietario-detail';
 import { faker } from '@faker-js/faker';
+import { ToastrModule } from 'ngx-toastr';
 
 describe('PropietarioListComponent', () => {
   let component: PropietarioListComponent;
@@ -13,7 +14,14 @@ describe('PropietarioListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
+      imports: [HttpClientModule,
+        ToastrModule.forRoot({
+          timeOut: 10000,
+          positionClass: 'toast-bottom-right',
+          preventDuplicates: true,
+        }),
+
+      ],
       declarations: [PropietarioListComponent]
     })
     .compileComponents();

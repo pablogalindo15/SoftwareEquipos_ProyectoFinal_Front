@@ -11,6 +11,7 @@ import { HabitanteModule } from './habitante/habitante.module';
 import { ComentarioModule } from './comentario/comentario.module';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
  
 
 
@@ -28,6 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LugarModule,
     ComentarioModule,
     HabitanteModule,
+    ReactiveFormsModule,
     ToastrModule.forRoot({
       timeOut: 10000,
       positionClass: 'toast-bottom-right',

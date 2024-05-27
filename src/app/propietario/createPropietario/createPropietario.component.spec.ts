@@ -2,8 +2,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-
+import { ReactiveFormsModule } from '@angular/forms'; // Importa ReactiveFormsModule
 import { CreatePropietarioComponent } from './createPropietario.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 
 describe('CreatePropietarioComponent', () => {
   let component: CreatePropietarioComponent;
@@ -11,6 +13,15 @@ describe('CreatePropietarioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[HttpClientModule,
+        ReactiveFormsModule,
+        ToastrModule.forRoot({
+          timeOut: 10000,
+          positionClass: 'toast-bottom-right',
+          preventDuplicates: true,
+        }),
+
+      ],
       declarations: [ CreatePropietarioComponent ]
     })
     .compileComponents();

@@ -20,20 +20,17 @@
           </select>
         </div>
 
-
         <div class="mb-3">
           <label for="tamanoRange" class="form-label">Select Tamano Range</label>
-          <input type="range" id="tamanoRange" class="form-range" min="100" max="10000" [(ngModel)]="selectedTamano" (change)="filterViviendas()">
+          <input type="range" id="tamanoRange" class="form-range" min="0" max="2000" step="5" [(ngModel)]="selectedTamano" (change)="filterViviendas()">
           <span>{{ selectedTamano }}</span>
         </div>
-
 
         <div class="mb-3">
           <label for="precioRange" class="form-label">Select Precio Range</label>
           <input type="range" id="precioRange" class="form-range" min="0" max="1000000" step="100000" [(ngModel)]="selectedPrecio" (change)="filterViviendas()">
           <span>{{ selectedPrecio }}</span>
         </div>
-
 
         <div class="mb-3">
           <label for="tipoSelect" class="form-label">Select Tipo</label>
@@ -42,7 +39,6 @@
             <option *ngFor="let tipo of tipos" [ngValue]="tipo">{{ tipo }}</option>
           </select>
         </div>
-
 
         <div class="mb-3">
           <button class="btn btn-primary w-100" (click)="resetFilters()">Reset Filters</button>
@@ -56,8 +52,8 @@
           <div class="card p-2" style="width: 15rem; height: 33rem">
             <img
               class="card-img-top"
-              src="{{ vivienda.fotos }}"
-              alt="{{ vivienda.nombre }}"
+              [src]="vivienda.fotos"
+              [alt]="vivienda.nombre"
               (click)="onSelected(vivienda)"
             />
             <div class="card-body">
@@ -68,7 +64,8 @@
               </p>
               <p class="card-text">
                 <i class="bi bi-person-circle"></i>
-                {{ vivienda.propietario.nombre }}</p>   
+                {{ vivienda.propietario.nombre }}
+              </p>   
               <p class="card-text">
                 <i class="bi bi-coin"></i>
                 {{ vivienda.precio }}
